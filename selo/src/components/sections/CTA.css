@@ -1,0 +1,216 @@
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  color: var(--white);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.cta-content {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.cta-content h2 {
+  font-size: 42px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-lg {
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+.help-section {
+  background: var(--white);
+  padding: 60px 40px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.help-card {
+  background: var(--bg-light);
+  padding: 30px;
+  border-radius: 15px;
+  height: 100%;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.help-card.highlight {
+  background: linear-gradient(135deg, rgba(243, 183, 0, 0.12), rgba(255, 193, 7, 0.12));
+  border-color: var(--primary-color);
+  box-shadow: 0 5px 20px rgba(243, 183, 0, 0.15);
+}
+
+.help-card h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+}
+
+.help-card p {
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.help-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.help-card ul li {
+  padding-left: 25px;
+  position: relative;
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.help-card ul li::before {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.help-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pricing-section {
+  background: var(--white);
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pricing-card {
+  background: var(--bg-light);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.pricing-card.featured {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  color: var(--white);
+  transform: scale(1.05);
+  border-color: var(--primary-color);
+  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.3);
+}
+
+.pricing-card.featured h3,
+.pricing-card.featured .price {
+  color: var(--white);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+.price {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.package-features li {
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  color: var(--text-color);
+}
+
+.pricing-card.featured .package-features li {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.package-features li::before {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.pricing-card.featured .package-features li::before {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 32px;
+  }
+
+  .help-section,
+  .pricing-section {
+    padding: 40px 20px;
+  }
+
+  .pricing-card.featured {
+    transform: scale(1);
+  }
+}
+

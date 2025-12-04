@@ -1,0 +1,384 @@
+/* About Page Styles with Animations */
+
+/* Hero Section */
+.welcome-banner {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.welcome-content .title {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.welcome-content .subtitle {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 15px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Image Wrapper */
+.about-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.about-image-wrapper img {
+  transition: transform 0.6s ease;
+}
+
+.about-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.about-image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(243, 183, 0, 0.1) 0%, transparent 100%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.about-image-wrapper:hover::before {
+  opacity: 1;
+}
+
+/* Mission & Vision Boxes */
+.mission-box, .vision-box {
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-box::before, .vision-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(243, 183, 0, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.mission-box:hover::before, .vision-box:hover::before {
+  left: 100%;
+}
+
+.mission-box:hover, .vision-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mission-icon, .vision-icon {
+  margin-bottom: 20px;
+  animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.mission-box h3, .vision-box h3 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.mission-box p, .vision-box p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Value Boxes */
+.value-box {
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.value-box::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--primary);
+  transition: width 0.4s ease;
+}
+
+.value-box:hover::after {
+  width: 100%;
+}
+
+.value-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+}
+
+.value-box .icon-box {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(243, 183, 0, 0.1) 0%, rgba(243, 183, 0, 0.05) 100%);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.value-box:hover .icon-box {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, rgba(243, 183, 0, 0.2) 0%, rgba(243, 183, 0, 0.1) 100%);
+}
+
+.value-box h4 {
+  margin-bottom: 15px;
+  color: var(--title);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.value-box p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* Button Animations */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(243, 183, 0, 0.4);
+}
+
+/* Team Section */
+.team-box {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.team-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+}
+
+.team-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.team-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(243, 183, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 50%;
+}
+
+.team-box:hover .team-overlay {
+  opacity: 1;
+}
+
+.team-box:hover .team-image img {
+  transform: scale(1.1);
+}
+
+.team-social {
+  display: flex;
+  gap: 15px;
+}
+
+.team-social a {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.team-social a:hover {
+  transform: scale(1.2);
+  background: var(--primary);
+  color: #fff;
+}
+
+.team-box h5 {
+  margin-bottom: 5px;
+  color: var(--title);
+  font-weight: 700;
+}
+
+/* Process Section */
+.process-box {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.process-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+}
+
+.process-number {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(243, 183, 0, 0.4);
+}
+
+.process-icon {
+  margin: 20px 0 25px;
+}
+
+.process-box h4 {
+  margin-bottom: 15px;
+  color: var(--title);
+  font-weight: 700;
+}
+
+.process-box p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* CTA Section */
+.section-full.bg-primary {
+  padding: 80px 0;
+}
+
+.section-full.bg-primary h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.section-full.bg-primary .btn-light {
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 15px 40px;
+}
+
+.section-full.bg-primary .btn-light:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .mission-box, .vision-box {
+    padding: 30px;
+  }
+  
+  .value-box {
+    padding: 30px 15px;
+  }
+  
+  .team-image {
+    width: 150px;
+    height: 150px;
+  }
+}
