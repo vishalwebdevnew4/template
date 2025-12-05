@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- Title -->
+	<title>Gawee - Job Board Mobile App ( Framework 7 + PWA ) | DexignZone</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#2196f3">
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+
+	<meta name="keywords" content="android, ios, mobile, mobile template, mobile app, ui kit, dark layout, app, buysell, classified, ios, native, service finder, uikit, user, Mobile App Template, App Development, User-friendly, Template Design, Cross-Platform, Mobile UI, Seamless Functionality, App Innovation, App Development Framework, user experience, user interface, craetive, unique design, cordova, framework 7, framework7, iphone x, job board admin, Job portal admin, modern, sass, web app, job seekers, job board, job application, job providers, jobs">
+
+	<meta name="description" content="Dive into the future of job search with Gawee â a Job Board Mobile App that seamlessly combines the power of Framework 7 and PWA (Progressive Web App) technologies. Experience a user-friendly interface, swift navigation, and offline accessibility, revolutionizing the way you connect with opportunities on the go. Gawee transforms job hunting into a dynamic and efficient experience, empowering users with cutting-edge features for a progressive and responsive mobile career platform.">
+
+	<meta property="og:title" content="Gawee - Job Board Mobile App ( Framework 7 + PWA ) | DexignZone">
+	<meta property="og:description" content="Dive into the future of job search with Gawee â a Job Board Mobile App that seamlessly combines the power of Framework 7 and PWA (Progressive Web App) technologies. Experience a user-friendly interface, swift navigation, and offline accessibility, revolutionizing the way you connect with opportunities on the go. Gawee transforms job hunting into a dynamic and efficient experience, empowering users with cutting-edge features for a progressive and responsive mobile career platform.">
+	
+	<meta property="og:image" content="https://gawee.dexignzone.com/xhtml/social-image.png">
+
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="twitter:title" content="Gawee - Job Board Mobile App ( Framework 7 + PWA ) | DexignZone">
+	
+	<meta name="twitter:description" content="Dive into the future of job search with Gawee â a Job Board Mobile App that seamlessly combines the power of Framework 7 and PWA (Progressive Web App) technologies. Experience a user-friendly interface, swift navigation, and offline accessibility, revolutionizing the way you connect with opportunities on the go. Gawee transforms job hunting into a dynamic and efficient experience, empowering users with cutting-edge features for a progressive and responsive mobile career platform.">
+	
+	<meta name="twitter:image" content="https://gawee.dexignzone.com/xhtml/social-image.png">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+	
+	<!-- Framework7 css -->
+	<link rel="stylesheet" href="css/framework7-bundle.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	
+	<!-- Fonts -->
+	<link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" href="css/line-awesome/css/line-awesome.min.css">
+	
+	<!-- Style css -->
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" href="img/f7-icon-square.png">
+	<link rel="icon" href="img/f7-icon.png">
+  
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+	
+</head>
+<body>
+	<div id="app">
+		<div class="panel panel-left panel-floating panel-resizable panel-init sidebar-left">
+			<div class="page">
+				<div class="page-content">
+					<div class="sidebar-logo">
+						<a href="#"><img src="img/logo-2.png" alt=""/></a>
+						<a href="#" class="panel-close">&times;</a>
+					</div>
+					<div class="nav-bar">
+						<ul>
+							<li class="active"><a href="/home/"><i class="fas fa-home"></i>Home</a></li>
+							<li><a href="/recent-job/"><i class="fas fa-file"></i>Recent Job</a></li>
+							<li><a href="/find-job/"><i class="fa-solid fa-chalkboard-user"></i>Find Job</a></li>
+							<li><a href="/notifications-app/"><i class="fa fa-bell"></i>Notifications (2)</a></li>
+							<li><a href="/profile/"><i class="fas fa-user-circle"></i>Profile</a></li>
+							<li><a href="/messages-list/"><i class="fas fa-envelope"></i>Message</a></li>
+							<li><a href="/elements/"><i class="fas fa-th-large"></i>Elements</a></li>
+							<li><a href="/color-themes/"><i class="fas fa-cog"></i>Setting</a></li>
+							<li><a href="/welcome/"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+						</ul>
+					</div>
+					<div class="sidebar-footer">
+						<h5 class="name">Gawee Job Portal</h5>
+						<p>App Version 1.3</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- View Main -->
+		<div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+			<div class="grid vh-100 loader-screen">
+				<div class="align-self-center text-white text-align-center">
+					<img src="img/logo.png" alt="logo">
+					<div class="laoderhorizontal">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="page page-onboading bg-light" data-name="home">
+				<div class="page-content pb-100">
+					<div class="onboading-logo">
+						<img src="img/logo-color.png" alt=""/>
+					</div>
+					<div class="my-auto">
+						<swiper-container pagination class="demo-swiper get-started" pagination-hide-on-click space-between="0" slides-per-view="auto">
+							<swiper-slide>
+								<div class="row">
+									<div class="color-white col-100">
+										<img src="img/job-slide1.png" alt="" class="orange-slice right-image align-self-center">
+										<h1 class="text-uppercase dz-title">Letâs get started</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+									</div>
+								</div>
+							</swiper-slide>
+							<swiper-slide>
+								<div class="row">
+									<div class="color-white col-100">
+										<img src="img/job-slide2.png" alt="" class="orange-slice right-image align-self-center">
+										<h1 class="text-uppercase dz-title">Recomended Jobs</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+									</div>
+								</div>
+							</swiper-slide>
+							<swiper-slide>
+								<div class="row">
+									<div class="color-white col-100">
+										<img src="img/job-slide1.png" alt="" class="orange-slice right-image align-self-center">
+										<h1 class="text-uppercase dz-title">Letâs get started</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+									</div>
+								</div>
+							</swiper-slide>
+						</swiper-container>
+					</div>
+				</div>
+				<div class="toolbar toolbar-bottom footer-button padding">
+					<div class="col-50">
+						<a href="/welcome/" class="button-large button button-fill">Get started</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+<!-- Script -->
+<script src="js/framework7-bundle.min.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

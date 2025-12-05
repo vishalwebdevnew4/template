@@ -1,0 +1,18 @@
+{
+  "name": "gawee",
+  "xhtml_base": "https://gawee.dexignzone.com/xhtml/",
+  "xhtml_index": "https://gawee.dexignzone.com/xhtml/index.html",
+  "demo_url": "https://gawee.dexignzone.com/",
+  "welcome_url": "https://gawee.dexignzone.com/welcome/",
+  "pages_cloned": [
+    "index.html"
+  ],
+  "total_pages": 1,
+  "inner_pages": 0,
+  "assets_count": {
+    "css": 6,
+    "js": 4,
+    "images": 5,
+    "fonts": 0
+  }
+}

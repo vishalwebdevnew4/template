@@ -1,0 +1,98 @@
+<fieldset class="hika_field adminform" id="hikashop_order_field_additional">
+	<legend>Additional information</legend>
+		<div class="hika_edit" bis_skin_checked="1"><a rel="nofollow" onclick="return window.orderMgr.setAdditionals(this);" class="btn btn-primary" id="hikashop_editadditional_popup" href="/administrator/index.php?option=com_hikashop&amp;ctrl=order&amp;task=edit&amp;subtask=additional&amp;cid=135466&amp;tmpl=component" data-hk-popup="vex" data-vex="{&quot;x&quot;:1280, &quot;y&quot;:700}"><i class="fas fa-pen"></i> Edit</a></div>
+
+<script type="text/javascript">
+<!--
+window.orderMgr.setAdditionals = function(el) {
+	window.hikashop.submitFct = function(data) {
+		var w = window, o = w.Oby;
+		w.hikashop.closeBox();
+		window.orderMgr.updateAdditional();
+		o.fireAjax('hikashop.order_update', {el: 'additionnal', obj: data});
+	};
+	window.hikashop.openBox(el);
+	return false;
+}
+//-->
+</script>
+
+	<table class="admintable table">
+		<tbody>
+			<!-- 1. ITEMS PRICE (calculated: Subtotal - GST) -->
+			<tr class="hikashop_order_additional_items">
+				<td class="key"><label>Items Price</label></td>
+				<td>
+					<span>
+						AUD 515.28
+					</span>
+				</td>
+			</tr>
+
+			<!-- 2. GST -->
+			<tr class="hikashop_order_additional_tax">
+				<td class="key"><label>GST</label></td>
+				<td><span>AUD 22.91</span></td>
+			</tr>
+
+			<!-- 3. SUBTOTAL (Items + GST) -->
+			<tr class="hikashop_order_additional_subtotal">
+				<td class="key"><label>Subtotal</label></td>
+				<td>
+					<span>
+						AUD 538.19
+					</span>
+				</td>
+			</tr>
+
+			<!-- 4. FEES SECTION -->
+			<tr class="hikashop_order_additional_coupon">
+				<td class="key"><label>Coupon</label></td>
+				<td>
+					<span>
+						AUD 0.00
+					</span>
+				</td>
+			</tr>
+
+			<tr class="hikashop_order_additional_shipping">
+				<td class="key"><label>Shipping</label></td>
+				<td><span>
+					AUD 0.00<ul><li>NONE</li></ul></span></td>
+			</tr>
+
+			<tr class="hikashop_order_additional_payment_fee">
+				<td class="key"><label>Payment fee</label></td>
+				<td><span>AUD 10.06 - Stripe</span></td>
+			</tr>
+
+			<tr class="hikashop_order_additional_booking_fees">
+				<td class="key">
+					<label>Booking Fees ( Inc GST )</label>
+				</td>
+				<td><span>AUD 15.01</span></td>
+			</tr>
+
+			<!-- 5. TOTAL -->
+			<tr class="hikashop_order_additional_total">
+				<td class="key"><label>Total</label></td>
+				<td><span>AUD 541.10</span></td>
+			</tr>
+
+			<!-- 6. GRAND TOTAL -->
+			<tr>
+				<td class="key">
+					<label><strong>Grand total</strong></label>
+				</td>
+				<td><span><strong>AUD 556.11</strong></span></td>
+			</tr>
+		</tbody>
+	</table>
+
+<script type="text/javascript">
+window.orderMgr.updateAdditional = function() {
+	window.hikashop.xRequest('/administrator/index.php?option=com_hikashop&ctrl=order&task=show&subtask=additional&cid=135466&tmpl=component', {update: 'hikashop_order_field_additional'});
+}
+</script>
+</fieldset>
+

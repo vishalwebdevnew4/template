@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="" name="keywords"/>
+<meta content="" name="author"/>
+<meta content="" name="robots"/>
+<meta content="MyDiary - Blog HTML Template" name="description"/>
+<meta content="MyDiary - Blog HTML Template" property="og:title"/>
+<meta content="MyDiary - Blog HTML Template" property="og:description"/>
+<meta content="" property="og:image"/>
+<meta content="telephone=no" name="format-detection"/>
+<!-- FAVICONS ICON -->
+<link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<!-- PAGE TITLE HERE -->
+<title>MyDiary - Blog HTML Template</title>
+<!-- MOBILE SPECIFIC -->
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+<!-- STYLESHEETS -->
+<link href="xhtml/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="xhtml/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="xhtml/css/templete.css" rel="stylesheet" type="text/css"/>
+<link class="skin" href="xhtml/css/skin/skin-1.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="bg">
+<div class="page-wraper">
+<div id="loading-area"></div>
+<div aria-hidden="true" aria-labelledby="exampleModal" class="modal fade subscribe-modal-bx" id="exampleModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content subscribe-form">
+<div class="modal-header">
+<div class="sub-title">
+<h3 class="title">Join Us To Day</h3>
+<p>Receive Only The Best Posts Via Email</p>
+</div>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<form action="script/mailchamp.php" class="dzSubscribe row align-items-center" method="post">
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+<input class="form-control" name="dzName" placeholder="Your Name " required="required" type="text"/>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+<input class="form-control" name="dzEmail" placeholder="Your Email Address" required="required" type="email"/>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group m-b0">
+<button class="btn secondry radius-no btn-block" name="submit" type="submit" value="Submit">Subscribe</button>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="dzSubscribeMsg"></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="header-author">
+<div class="author-bx">
+<div class="author-media">
+<img alt="" src="xhtml/images/author.jpg"/>
+</div>
+<div class="author-info">
+<h2 class="title">Hi. i am Shailja Reddy</h2>
+<p>I am a developer based in Melbourne</p>
+<ul class="author-social">
+<li><a class="" href="javascript:void(0);"><i class="fa fa-facebook"></i> <span>facebook</span></a></li>
+<li><a class="" href="javascript:void(0);"><i class="fa fa-instagram"></i> <span>instagram</span></a></li>
+<li><a class="" href="javascript:void(0);"><i class="fa fa-twitter"></i> <span>twitter</span></a></li>
+<li><a class="" href="javascript:void(0);"><i class="fa fa-linkedin"></i> <span>linkedin</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- header -->
+<header class="site-header mo-left header-full header">
+<!-- main header -->
+<div class="sticky-header main-bar-wraper navbar-expand-lg">
+<div class="main-bar clearfix">
+<div class="container-fluid">
+<!-- website logo -->
+<div class="logo-header mostion">
+<a href="index.html"><img alt="" src="xhtml/images/logo-black.png"/></a>
+</div>
+<!-- nav toggle button -->
+<button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed navicon justify-content-end" data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<!-- extra nav -->
+<div class="extra-nav">
+<div class="extra-cell">
+<ul>
+<li class="search-btn">
+<a href="javascript:;" id="quik-search-btn"><i class="ti-search m-r10"></i><span>Search</span></a>
+</li>
+<li>
+<button class="btn secondry radius-no" data-target="#exampleModal" data-toggle="modal" type="button">Subscribe</button>
+</li>
+</ul>
+</div>
+</div>
+<!-- Quik search -->
+<div class="dlab-quik-search">
+<form action="#">
+<input class="form-control" name="search" placeholder="Search..." type="text" value=""/>
+<span id="quik-search"><i class="ti-search"></i></span>
+</form>
+<span class="search-remove" id="quik-search-remove"><i class="ti-close"></i></span>
+</div>
+<!-- main nav -->
+<div class="header-nav navbar-collapse collapse justify-content-left" id="navbarNavDropdown">
+<div class="logo-header">
+<a href="index.html"><img alt="" src="xhtml/images/logo.png"/></a>
+</div>
+<ul class="nav navbar-nav">
+<li class="active">
+<a href="javascript:void(0);">Home<i class="fa fa-chevron-down"></i></a>
+<ul class="sub-menu">
+<li><a href="index.html">Home 01</a></li>
+<li><a href="index-2.html">Home 02</a></li>
+<li><a href="index-3.html">Home 03</a></li>
+<li><a href="index-4.html">Home 04</a></li>
+<li><a href="index-5.html">Home 05</a></li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0);">Pages<i class="fa fa-chevron-down"></i></a>
+<ul class="sub-menu">
+<li><a href="about-me.html">About</a></li>
+<li><a href="archive.html">Archive</a></li>
+<li><a href="author.html">Author</a></li>
+<li><a href="category.html">Category</a></li>
+<li><a href="tags.html">Tags</a></li>
+<li><a href="search-results.html">Search results</a></li>
+<li><a href="coming-soon.html">Coming Soon</a></li>
+<li><a href="sitedown.html">Maintenance</a></li>
+<li><a href="error-404.html">Error 404</a></li>
+</ul>
+</li>
+<li class="has-mega-menu post-slider life-style">
+<a href="javascript:void(0);">Category<i class="fa fa-chevron-down"></i></a>
+<div class="mega-menu">
+<div class="life-style-bx">
+<div class="life-style-tabs">
+<ul>
+<li><a class="post-tabs active" href="javascript:void(0);" id="st-all">All</a></li>
+<li><a class="post-tabs" href="javascript:void(0);" id="st-beauty">Beauty</a></li>
+<li><a class="post-tabs" href="javascript:void(0);" id="st-lifestyle">Lifestyle</a></li>
+<li><a class="post-tabs" href="javascript:void(0);" id="st-fashion">Fashion</a></li>
+<li><a class="post-tabs" href="javascript:void(0);" id="st-travel">Travel</a></li>
+</ul>
+</div>
+<div class="life-style-post text-center">
+<div class="life-style-post-bx show" id="all">
+<div class="header-blog-carousel owl-carousel owl-btn-center-lr">
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-standard.html"><img alt="" src="xhtml/images/category/pic1.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-standard.html">Ready or Not, the Return into of the Hobo Bag Is Nigh</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-left-sidebar.html"><img alt="" src="xhtml/images/category/pic2.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-left-sidebar.html">This Week on Instagram, Celebri ties Went All-In on Prints</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-full-width.html"><img alt="" src="xhtml/images/category/pic3.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-header-image.html">Anniversary With An Exhibition At Dallas Contemporary</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-slide-show.html"><img alt="" src="xhtml/images/category/pic4.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-slide-show.html">La Dolce Vita Meets Old School on Beach Style </a></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="life-style-post-bx" id="beauty">
+<div class="header-blog-carousel owl-carousel owl-btn-center-lr">
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-standard.html"><img alt="" src="xhtml/images/category/pic1.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-standard.html">Ready or Not, the Return into of the Hobo Bag Is Nigh</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-left-sidebar.html"><img alt="" src="xhtml/images/category/pic2.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-left-sidebar.html">This Week on Instagram, Celebri ties Went All-In on Prints</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-full-width.html"><img alt="" src="xhtml/images/category/pic3.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-header-image.html">Anniversary With An Exhibition At Dallas Contemporary</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-slide-show.html"><img alt="" src="xhtml/images/category/pic4.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-slide-show.html">La Dolce Vita Meets Old School on Beach Style </a></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="life-style-post-bx" id="lifestyle">
+<div class="header-blog-carousel owl-carousel owl-btn-center-lr">
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-standard.html"><img alt="" src="xhtml/images/category/pic1.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-standard.html">Ready or Not, the Return into of the Hobo Bag Is Nigh</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-left-sidebar.html"><img alt="" src="xhtml/images/category/pic2.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-left-sidebar.html">This Week on Instagram, Celebri ties Went All-In on Prints</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-full-width.html"><img alt="" src="xhtml/images/category/pic3.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-header-image.html">Anniversary With An Exhibition At Dallas Contemporary</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-slide-show.html"><img alt="" src="xhtml/images/category/pic4.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-slide-show.html">La Dolce Vita Meets Old School on Beach Style </a></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="life-style-post-bx" id="fashion">
+<div class="header-blog-carousel owl-carousel owl-btn-center-lr">
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-standard.html"><img alt="" src="xhtml/images/category/pic1.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-standard.html">Ready or Not, the Return into of the Hobo Bag Is Nigh</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-left-sidebar.html"><img alt="" src="xhtml/images/category/pic2.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-left-sidebar.html">This Week on Instagram, Celebri ties Went All-In on Prints</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-full-width.html"><img alt="" src="xhtml/images/category/pic3.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-header-image.html">Anniversary With An Exhibition At Dallas Contemporary</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-slide-show.html"><img alt="" src="xhtml/images/category/pic4.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-slide-show.html">La Dolce Vita Meets Old School on Beach Style </a></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="life-style-post-bx" id="travel">
+<div class="header-blog-carousel owl-carousel owl-btn-center-lr">
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-standard.html"><img alt="" src="xhtml/images/category/pic1.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-standard.html">Ready or Not, the Return into of the Hobo Bag Is Nigh</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-left-sidebar.html"><img alt="" src="xhtml/images/category/pic2.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-left-sidebar.html">This Week on Instagram, Celebri ties Went All-In on Prints</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-full-width.html"><img alt="" src="xhtml/images/category/pic3.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-header-image.html">Anniversary With An Exhibition At Dallas Contemporary</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="blog-post blog-sm">
+<div class="dlab-post-media">
+<a href="post-slide-show.html"><img alt="" src="xhtml/images/category/pic4.jpg"/></a>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-title">
+<h5 class="post-title"><a href="post-slide-show.html">La Dolce Vita Meets Old School on Beach Style </a></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sub-menu-down"><a href="javascript:void(0);">Blog<i class="fa fa-chevron-down"></i></a>
+<ul class="sub-menu">
+<li><a href="javascript:void();">Page Layout <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="javascript:void();">No Sidebar <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="blog-list-right-sidebar.html">Blog List</a></li>
+<li><a href="blog-grid-right-sidebar.html">Blog Grid</a></li>
+<li><a href="blog-grid-wide.html">Blog Grid Wide</a></li>
+</ul>
+</li>
+<li><a href="javascript:void();">2 Columns <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="blog-list-right-sidebar.html">Blog List</a></li>
+<li><a href="blog-grid-right-sidebar.html">Blog Grid</a></li>
+</ul>
+</li>
+<li><a href="javascript:void();">3 Columns <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="blog-list-both-sidebar.html">Blog List</a></li>
+<li><a href="blog-grid-both-sidebar.html">Blog Grid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void();">Blog Sidebar <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="javascript:void();">No Sidebar <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="blog-list-right-sidebar.html">Blog List</a></li>
+<li><a href="blog-grid-right-sidebar.html">Blog Grid</a></li>
+</ul>
+</li>
+<li><a href="javascript:void();">Left Sidebar <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="blog-list-left-sidebar.html">Blog List</a></li>
+<li><a href="blog-grid-left-sidebar.html">Blog Grid</a></li>
+</ul>
+</li>
+<li><a href="javascript:void();">Right Sidebar <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="blog-list-right-sidebar.html">Blog List</a></li>
+<li><a href="blog-grid-right-sidebar.html">Blog Grid</a></li>
+</ul>
+</li>
+<li><a href="javascript:void();">2 Sidebar <i class="fa fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li><a href="blog-list-both-sidebar.html">Blog List</a></li>
+<li><a href="blog-grid-both-sidebar.html">Blog Grid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="has-mega-menu"><a href="javascript:void(0);">Post Layout<i class="fa fa-chevron-down"></i></a>
+<ul class="mega-menu">
+<li><a href="javascript:void(0);">Side Bar</a>
+<ul>
+<li><a href="post-left-sidebar.html">Post Left Sidebar</a></li>
+<li><a href="post-right-sidebar.html">Post Right Sidebar</a></li>
+<li><a href="post-both-sidebar.html">Post Both Sidebar <span class="new-page">New</span></a></li>
+<li><a href="post-no-sidebar.html">Post No Sidebar</a></li>
+</ul>
+</li>
+<li> <a href="javascript:void(0);">Post Types</a>
+<ul>
+<li><a href="post-text.html">Text Post <span class="new-page">New</span></a></li>
+<li><a href="post-image.html">Image Post <span class="new-page">New</span></a></li>
+<li><a href="post-video.html">Post Video</a></li>
+<li><a href="post-link.html">Post Link</a></li>
+<li><a href="post-audio.html">Post Audio</a></li>
+<li><a href="post-quote.html">Post Quote</a></li>
+<li><a href="post-tutorial.html">Tutorial Post <span class="new-page">New</span></a></li>
+<li><a href="post-cateloge.html">Cateloge Post <span class="new-page">New</span></a></li>
+</ul>
+</li>
+<li> <a href="javascript:void(0);">Multiple Media</a>
+<ul>
+<li><a href="post-banner.html">Banner <span class="new-page">New</span></a></li>
+<li><a href="post-slide-show.html">Post Slide Show</a></li>
+<li><a href="post-gallery.html">Gallery</a></li>
+<li><a href="post-status-slider.html">Status Slider <span class="new-page">New</span></a></li>
+</ul>
+</li>
+<li> <a href="javascript:void(0);">Post Layout Type</a>
+<ul>
+<li><a href="post-standard.html">Standard Post </a></li>
+<li><a href="post-side.html">Side Post <span class="new-page">New</span></a></li>
+<li><a href="post-corner.html">Corner Post <span class="new-page">New</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0);">Shop<i class="fa fa-chevron-down"></i></a>
+<ul class="sub-menu">
+<li><a href="shop-product.html">Product</a></li>
+<li><a href="shop-product-details.html">Product Details</a></li>
+<li><a href="shop-cart.html">Cart</a></li>
+<li><a href="shop-checkout.html">Checkout</a></li>
+</ul>
+</li>
+<li><a href="contact-me.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- header END -->
+<!-- Content -->
+<div class="page-content bg-white">
+<!-- Blog Post -->
+<div class="section-full bg-gray content-inner">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-md-8 col-sm-12 col-12">
+<div class="row">
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
+<div class="bg-white p-a30 m-b30">
+<div class="author-profile-info">
+<div class="author-profile-pic">
+<a href="javascript:void(0);">
+<img alt="Profile Pic" height="130" src="xhtml/images/author.jpg" width="130"/>
+</a>
+</div>
+<div class="author-profile-content">
+<h6 class="title">I Am Shailja Reddy</h6>
+<p>There are many variations of passages of Lorem Ipsum available.</p>
+<ul class="social-icon m-b0">
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a></li>
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-youtube-play"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">
+<div class="blog-card blog-md post-boxed">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/blog-md/blog/pic2.jpg"/>
+</div>
+<div class="blog-card-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">beauty</a>, <a href="javascript:void(0);">beauty</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h4 class="title"><a href="post-standard.html">Ready or Not, the Return of the Hobo Bag Is Nigh</a></h4>
+<p>Sed non  mauris vitae erat au auctor euin elit. Class taciti soc iosqu alitora. </p>
+<div class="dlab-feed-meta">
+<ul>
+<li class="post-like"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i><span>231</span></a></li>
+<li class="post-dislike"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-down"></i><span>584</span></a></li>
+<li class="post-view"><a href="javascript:void(0);"><i class="fa fa-eye"></i><span>397</span></a></li>
+<li class="post-share"><i class="fa fa-share-alt"></i><span>Share</span>
+<ul>
+<li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="2s">
+<div class="blog-card blog-md post-boxed">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/blog-md/blog/pic1.jpg"/>
+</div>
+<div class="blog-card-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">beauty</a>, <a href="javascript:void(0);">beauty</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h4 class="title"><a href="post-header-image.html">Everything You Need to Know About Cultural Institution</a></h4>
+<p>Sed non  mauris vitae erat au auctor euin elit. Class taciti soc iosqu alitora. </p>
+<div class="dlab-feed-meta">
+<ul>
+<li class="post-like"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i><span>231</span></a></li>
+<li class="post-dislike"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-down"></i><span>584</span></a></li>
+<li class="post-view"><a href="javascript:void(0);"><i class="fa fa-eye"></i><span>397</span></a></li>
+<li class="post-share"><i class="fa fa-share-alt"></i><span>Share</span>
+<ul>
+<li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">
+<div class="blog-card blog-md post-boxed">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/blog-md/blog/pic5.jpg"/>
+</div>
+<div class="blog-card-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">beauty</a>, <a href="javascript:void(0);">beauty</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h4 class="title"><a href="post-slide-show.html">Natural Hair Guru Who Launch Products For Tresses</a></h4>
+<p>Sed non  mauris vitae erat au auctor euin elit. Class taciti soc iosqu alitora. </p>
+<div class="dlab-feed-meta">
+<ul>
+<li class="post-like"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i><span>231</span></a></li>
+<li class="post-dislike"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-down"></i><span>584</span></a></li>
+<li class="post-view"><a href="javascript:void(0);"><i class="fa fa-eye"></i><span>397</span></a></li>
+<li class="post-share"><i class="fa fa-share-alt"></i><span>Share</span>
+<ul>
+<li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="2s">
+<div class="blog-card blog-md post-boxed">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/blog-md/blog/pic4.jpg"/>
+</div>
+<div class="blog-card-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">beauty</a>, <a href="javascript:void(0);">beauty</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h4 class="title"><a href="post-audio.html">Everything You Need to Know About Cultural Institution</a></h4>
+<p>Sed non  mauris vitae erat au auctor euin elit. Class taciti soc iosqu alitora. </p>
+<div class="dlab-feed-meta">
+<ul>
+<li class="post-like"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i><span>231</span></a></li>
+<li class="post-dislike"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-down"></i><span>584</span></a></li>
+<li class="post-view"><a href="javascript:void(0);"><i class="fa fa-eye"></i><span>397</span></a></li>
+<li class="post-share"><i class="fa fa-share-alt"></i><span>Share</span>
+<ul>
+<li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="2s">
+<div class="blog-card blog-md post-boxed">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/blog-md/blog/pic8.jpg"/>
+</div>
+<div class="blog-card-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">beauty</a>, <a href="javascript:void(0);">beauty</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h4 class="title"><a href="post-video.html">Everything You Need to Know About Cultural Institution</a></h4>
+<p>Sed non  mauris vitae erat au auctor euin elit. Class taciti soc iosqu alitora. </p>
+<div class="dlab-feed-meta">
+<ul>
+<li class="post-like"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i><span>231</span></a></li>
+<li class="post-dislike"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-down"></i><span>584</span></a></li>
+<li class="post-view"><a href="javascript:void(0);"><i class="fa fa-eye"></i><span>397</span></a></li>
+<li class="post-share"><i class="fa fa-share-alt"></i><span>Share</span>
+<ul>
+<li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
+<div class="blog-card blog-md post-boxed">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/blog-md/blog/pic3.jpg"/>
+</div>
+<div class="blog-card-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">beauty</a>, <a href="javascript:void(0);">beauty</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h4 class="title"><a href="post-pagination.html">Everything You Need to Know About Cultural Institution</a></h4>
+<p>Sed non  mauris vitae erat au auctor euin elit. Class taciti soc iosqu alitora. </p>
+<div class="dlab-feed-meta">
+<ul>
+<li class="post-like"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i><span>231</span></a></li>
+<li class="post-dislike"><a href="javascript:void(0);"><i class="fa fa-thumbs-o-down"></i><span>584</span></a></li>
+<li class="post-view"><a href="javascript:void(0);"><i class="fa fa-eye"></i><span>397</span></a></li>
+<li class="post-share"><i class="fa fa-share-alt"></i><span>Share</span>
+<ul>
+<li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination start -->
+<div class="reload-btn text-center">
+<a class="btn" href="javascript:void(0);">Load More <i class="fa fa-repeat"></i></a>
+</div>
+<!-- Pagination End -->
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+<div class="side-bar sticky-top">
+<div class="widget recent-posts-entry wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="2s">
+<h6 class="widget-title"><span>Popular Posts</span></h6>
+<div class="widget-post-bx">
+<div class="widget-post clearfix">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/recent-blog/pic1.jpg"/>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">Lifestyle</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h6 class="post-title"><a href="post-header-image.html">Hamish Bowles Spends a Week in Qatar and Is Dazzled by Doha</a></h6>
+</div>
+</div>
+<div class="widget-post clearfix">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/recent-blog/pic2.jpg"/>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">Lifestyle</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h6 class="post-title"><a href="post-left-sidebar.html">This Week on Instagram, Celebri ties Went All-In on Prints</a></h6>
+</div>
+</div>
+<div class="widget-post clearfix">
+<div class="dlab-post-media">
+<img alt="" src="xhtml/images/blog/recent-blog/pic3.jpg"/>
+</div>
+<div class="dlab-post-info">
+<div class="dlab-post-meta">
+<ul>
+<li class="post-category"><a href="javascript:void(0);">Lifestyle</a></li>
+<li class="post-date">at <span>16 August 2024</span></li>
+</ul>
+</div>
+<h6 class="post-title"><a href="post-standard.html">Anniversary With An Exhibition At Dallas Contemporary</a></h6>
+</div>
+</div>
+</div>
+</div>
+<div class="widget widget_categories wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
+<h6 class="widget-title"><span>Categories</span></h6>
+<ul>
+<li><a href="category.html">Culture </a> <span class="badge">11</span> </li>
+<li><a href="category.html">Lifestyle </a> <span class="badge">08</span></li>
+<li><a href="category.html">Fashion </a> <span class="badge">14</span></li>
+<li><a href="category.html">Food &amp; Health </a> <span class="badge">05</span></li>
+<li><a href="category.html">Travel </a> <span class="badge">10</span></li>
+</ul>
+</div>
+<div class="widget widget-vlog wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">
+<h6 class="widget-title"><span>Latest Vlog</span></h6>
+<div class="widget-carousel owl-carousel owl-dots-style1 owl-none owl-theme">
+<div class="item">
+<div class="post-box">
+<img alt="" src="xhtml/images/video-post/pic1.jpg"/>
+<a class="popup-youtube video" href="https://www.youtube.com/watch?v=Dj6CKxQue7U"><i class="fa fa-youtube-play"></i></a>
+</div>
+</div>
+<div class="item">
+<div class="post-box">
+<img alt="" src="xhtml/images/video-post/pic2.jpg"/>
+<a class="popup-youtube video" href="https://www.youtube.com/watch?v=Dj6CKxQue7U"><i class="fa fa-youtube-play"></i></a>
+</div>
+</div>
+<div class="item">
+<div class="post-box">
+<img alt="" src="xhtml/images/video-post/pic3.jpg"/>
+<a class="popup-youtube video" href="https://www.youtube.com/watch?v=Dj6CKxQue7U"><i class="fa fa-youtube-play"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Blog Post End -->
+<!-- Instagram Post Carousel -->
+<div class="section-full insta-post-carousel owl-carousel owl-none wow fadeIn lightgallery" data-wow-delay="0.6s" data-wow-duration="2s">
+<div class="item">
+<span class="check-km dlab-img-effect" data-exthumbimage="images/blog/card/small/pic1.jpg" data-src="images/blog/card/full-img/pic1.jpg" title="Title Come Here">
+<img alt="" src="xhtml/images/blog/card/pic1.jpg"/>
+</span>
+</div>
+<div class="item">
+<span class="check-km dlab-img-effect" data-exthumbimage="images/blog/card/small/pic2.jpg" data-src="images/blog/card/full-img/pic2.jpg" title="Title Come Here">
+<img alt="" src="xhtml/images/blog/card/pic2.jpg"/>
+</span>
+</div>
+<div class="item">
+<span class="check-km dlab-img-effect" data-exthumbimage="images/blog/card/small/pic3.jpg" data-src="images/blog/card/full-img/pic3.jpg" title="Title Come Here">
+<img alt="" src="xhtml/images/blog/card/pic3.jpg"/>
+</span>
+</div>
+<div class="item">
+<span class="check-km dlab-img-effect" data-exthumbimage="images/blog/card/small/pic4.jpg" data-src="images/blog/card/full-img/pic4.jpg" title="Title Come Here">
+<img alt="" src="xhtml/images/blog/card/pic4.jpg"/>
+</span>
+</div>
+<div class="item">
+<span class="check-km dlab-img-effect" data-exthumbimage="images/blog/card/small/pic5.jpg" data-src="images/blog/card/full-img/pic5.jpg" title="Title Come Here">
+<img alt="" src="xhtml/images/blog/card/pic5.jpg"/>
+</span>
+</div>
+<div class="item">
+<span class="check-km dlab-img-effect" data-exthumbimage="images/blog/card/small/pic6.jpg" data-src="images/blog/card/full-img/pic6.jpg" title="Title Come Here">
+<img alt="" src="xhtml/images/blog/card/pic6.jpg"/>
+</span>
+</div>
+<div class="item">
+<span class="check-km dlab-img-effect" data-exthumbimage="images/blog/card/small/pic7.jpg" data-src="images/blog/card/full-img/pic7.jpg" title="Title Come Here">
+<img alt="" src="xhtml/images/blog/card/pic7.jpg"/>
+</span>
+</div>
+</div>
+<!-- Blog Card Carousel End -->
+</div>
+<!-- Content END-->
+<!-- Footer -->
+<footer class="site-footer wow fadeIn" data-wow-delay="0.8s" data-wow-duration="2s">
+<div class="footer-top">
+<div class="container">
+<div class="row">
+<div class="col-md-4 align-self-center">
+<ul class="footer-link m-b0 p-l0">
+<li><a href="index.html">Blog</a></li>
+<li><a href="about-me.html">Shop</a></li>
+<li><a href="contact-me.html">About</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<div class="footer-logo">
+<a href="index.html"><img alt="" src="xhtml/images/logo.png"/></a>
+</div>
+</div>
+<div class="col-md-4 align-self-center">
+<ul class="social-icon m-b0 p-l0">
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+<li><a class="btn radius-xl" href="javascript:void(0);"><i class="fa fa-youtube-play"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<p>Â© <span class="current-year">2021</span> Copyright MyDiary Template.</p>
+</div>
+</div>
+</footer>
+<!-- Footer END-->
+<button class="scroltop fa fa-chevron-up"></button>
+</div>
+<!-- JAVASCRIPT FILES ========================================= -->
+<script src="xhtml/js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+<script src="xhtml/plugins/wow/wow.js"></script><!-- WOW JS -->
+<script src="xhtml/plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="xhtml/plugins/bootstrap/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="xhtml/plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
+<script src="xhtml/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+<script src="xhtml/plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
+<script src="xhtml/plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
+<script src="xhtml/plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
+<script src="xhtml/plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
+<script src="xhtml/plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
+<script src="xhtml/plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
+<script src="xhtml/plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
+<script src="xhtml/plugins/scroll/scrollbar.min.js"></script><!-- Scroll Bar -->
+<script src="xhtml/plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- Lightgallery -->
+<script src="xhtml/js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="xhtml/js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS -->
+<script src="xhtml/js/dz.ajax.js"></script><!-- CONTACT JS  -->
+</body>
+</html>

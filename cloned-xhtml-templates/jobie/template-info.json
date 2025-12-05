@@ -1,0 +1,40 @@
+{
+  "name": "jobie",
+  "xhtml_base": "https://jobie.dexignzone.com/xhtml/",
+  "xhtml_index": "https://jobie.dexignzone.com/xhtml/index.html",
+  "demo_url": "https://jobie.dexignzone.com/",
+  "welcome_url": "https://jobie.dexignzone.com/welcome/",
+  "pages_cloned": [
+    "index.html",
+    "index.html",
+    "app-profile.html",
+    "email-inbox.html",
+    "index-dark.html",
+    "search-job.html",
+    "application.html",
+    "profile.html",
+    "companies.html",
+    "statistics.html",
+    "chat.html",
+    "post-details.html",
+    "edit-profile.html",
+    "email-compose.html",
+    "email-read.html",
+    "app-calender.html",
+    "ecom-product-grid.html",
+    "ecom-product-list.html",
+    "ecom-product-detail.html",
+    "ecom-product-order.html",
+    "ecom-checkout.html",
+    "ecom-invoice.html",
+    "ecom-customers.html"
+  ],
+  "total_pages": 23,
+  "inner_pages": 63,
+  "assets_count": {
+    "css": 18,
+    "js": 29,
+    "images": 49,
+    "fonts": 0
+  }
+}

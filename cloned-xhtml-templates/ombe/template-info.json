@@ -1,0 +1,18 @@
+{
+  "name": "ombe",
+  "xhtml_base": "https://ombe.dexignzone.com/xhtml/",
+  "xhtml_index": "https://ombe.dexignzone.com/xhtml/index.html",
+  "demo_url": "https://ombe.dexignzone.com/",
+  "welcome_url": "https://ombe.dexignzone.com/welcome/",
+  "pages_cloned": [
+    "index.html"
+  ],
+  "total_pages": 1,
+  "inner_pages": 0,
+  "assets_count": {
+    "css": 7,
+    "js": 4,
+    "images": 4,
+    "fonts": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "datingkit",
+  "xhtml_base": "https://datingkit.dexignzone.com/xhtml/",
+  "xhtml_index": "https://datingkit.dexignzone.com/xhtml/index.html",
+  "demo_url": "https://datingkit.dexignzone.com/",
+  "welcome_url": "https://datingkit.dexignzone.com/welcome/",
+  "pages_cloned": [
+    "index.html",
+    "media.html",
+    "index.html",
+    "pages.html",
+    "home-setting.html"
+  ],
+  "total_pages": 5,
+  "inner_pages": 36,
+  "assets_count": {
+    "css": 5,
+    "js": 8,
+    "images": 53,
+    "fonts": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "plexify",
+  "xhtml_base": "https://plexify.dexignzone.com/xhtml/",
+  "xhtml_index": "https://plexify.dexignzone.com/xhtml/index.html",
+  "demo_url": "https://plexify.dexignzone.com/",
+  "welcome_url": "https://plexify.dexignzone.com/welcome/",
+  "pages_cloned": [
+    "index.html"
+  ],
+  "total_pages": 1,
+  "inner_pages": 0,
+  "assets_count": {
+    "css": 8,
+    "js": 9,
+    "images": 39,
+    "fonts": 0
+  }
+}

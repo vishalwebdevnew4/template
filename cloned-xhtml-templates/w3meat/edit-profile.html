@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Title -->
+<title>W3Meat: Meat Shop Mobile App Template ( Bootstrap + PWA )</title>
+<!-- Meta -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover" name="viewport"/>
+<meta content="#009688" name="theme-color"/>
+<meta content="DexignZone" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="android, ios, mobile, application template, progressive web app, ui kit, multiple color, dark layout, meat shop" name="keywords"/>
+<meta content="Experience the ultimate convenience of a mobile meat shop with our cutting-edge Bootstrap and PWA-powered template" name="description"/>
+<meta content="W3Meat: Meat Shop Mobile App Template ( Bootstrap + PWA )" property="og:title"/>
+<meta content="Experience the ultimate convenience of a mobile meat shop with our cutting-edge Bootstrap and PWA-powered template" property="og:description"/>
+<meta content="https://w3meat.dexignzone.com/xhtml/social-image.png" property="og:image"/>
+<meta content="telephone=no" name="format-detection"/>
+<!-- Favicons Icon -->
+<link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<!-- Global CSS -->
+<link href="xhtml/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet"/>
+<link href="xhtml/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+<link href="xhtml/assets/vendor/imageuplodify/imageuploadify.min.css" rel="stylesheet"/>
+<!-- Stylesheets -->
+<link href="xhtml/assets/css/style.css" rel="stylesheet" type="text/css"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="external/fonts_googleapis_com/css2" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-wraper">
+<!-- Preloader -->
+<div id="preloader">
+<div class="loader">
+<div class="load-circle"><div></div><div></div></div>
+</div>
+</div>
+<!-- Preloader end-->
+<!-- Header -->
+<header class="header">
+<div class="main-bar">
+<div class="container">
+<div class="header-content">
+<div class="left-content">
+<a class="back-btn" href="javascript:void(0);">
+<i class="fa-solid fa-xmark"></i>
+</a>
+</div>
+<div class="mid-content">
+<h5 class="title mb-0 text-nowrap">Edit profile</h5>
+</div>
+<div class="right-content">
+<a class="text-dark font-20 back-btn" href="javascript:void(0);">
+<i class="fa-solid fa-check"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Header End -->
+<!-- Page Content -->
+<div class="page-content">
+<div class="container">
+<div class="edit-profile">
+<div class="profile-image">
+<div class="avatar-upload">
+<div class="avatar-preview">
+<div id="imagePreview" style="background-image: url(assets/images/avatar/5.jpg);">
+</div>
+</div>
+<div class="change-btn">
+<input accept=".png, .jpg, .jpeg" class="form-control d-none" id="imageUpload" type="file"/>
+<label for="imageUpload">
+<i class="fa-regular fa-image"></i>
+</label>
+</div>
+</div>
+<a href="javascript:void(0);">Change profile photo</a>
+</div>
+<form>
+<div class="mb-3 input-group input-mini">
+<input class="form-control" placeholder="Name" type="text"/>
+</div>
+<div class="mb-3 input-group input-mini">
+<input class="form-control" placeholder="Username" type="text"/>
+</div>
+<div class="mb-3 input-group input-mini">
+<input class="form-control" placeholder="Website" type="url"/>
+</div>
+<div class="mb-3 input-group input-mini">
+<input class="form-control" placeholder="Bio" type="text"/>
+</div>
+</form>
+</div>
+<ul class="link-list">
+<li>
+<a href="javascript:void(0);">Add Link</a>
+</li>
+<li>
+<a href="javascript:void(0);">Switch to professional account</a>
+</li>
+<li>
+<a href="javascript:void(0);">Create avatar</a>
+</li>
+<li>
+<a href="javascript:void(0);">Personal information settings</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Page Content End-->
+</div>
+<!--**********************************
+    Scripts
+***********************************-->
+<script src="xhtml/assets/js/jquery.js"></script>
+<script src="xhtml/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="xhtml/assets/vendor/imageuplodify/imageuploadify.js"></script>
+<script src="xhtml/assets/js/settings.js"></script>
+<script src="xhtml/assets/js/custom.js"></script>
+<script>
+	<script>
+	$(function () {
+		  $("#datepicker").datepicker({ 
+				autoclose: true, 
+				todayHighlight: true
+		  }).datepicker('update', new Date());
+	
+	});
+
+</script>
+<script>
+	function readURL(input) {
+		if (input.files && input.files[0]) {
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				$('#imagePreview').css('background-image', 'url('+e.target.result +')');
+				$('#imagePreview').hide();
+				$('#imagePreview').fadeIn(650);
+			}
+			reader.readAsDataURL(input.files[0]);
+		}
+	}
+	$("#imageUpload").change(function() {
+		readURL(this);
+	});
+	$('.remove-img').on('click', function() {
+		var imageUrl = "images/no-img-avatar.png";
+		$('.avatar-preview, #imagePreview').removeAttr('style');
+		$('#imagePreview').css('background-image', 'url(' + imageUrl + ')');
+	});
+</script>
+
+</body></html>

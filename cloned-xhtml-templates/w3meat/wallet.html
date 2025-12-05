@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Title -->
+<title>W3Meat: Meat Shop Mobile App Template ( Bootstrap + PWA )</title>
+<!-- Meta -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover" name="viewport"/>
+<meta content="#009688" name="theme-color"/>
+<meta content="DexignZone" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="android, ios, mobile, application template, progressive web app, ui kit, multiple color, dark layout, meat shop" name="keywords"/>
+<meta content="Experience the ultimate convenience of a mobile meat shop with our cutting-edge Bootstrap and PWA-powered template" name="description"/>
+<meta content="W3Meat: Meat Shop Mobile App Template ( Bootstrap + PWA )" property="og:title"/>
+<meta content="Experience the ultimate convenience of a mobile meat shop with our cutting-edge Bootstrap and PWA-powered template" property="og:description"/>
+<meta content="https://w3meat.dexignzone.com/xhtml/social-image.png" property="og:image"/>
+<meta content="telephone=no" name="format-detection"/>
+<!-- Favicons Icon -->
+<link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<!-- PWA Version -->
+<link href="manifest.json" rel="manifest"/>
+<!-- Global CSS -->
+<link href="xhtml/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet"/>
+<link href="xhtml/assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" rel="stylesheet"/>
+<link href="xhtml/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- Stylesheets -->
+<link href="xhtml/assets/css/style.css" rel="stylesheet" type="text/css"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="external/fonts_googleapis_com/css2" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-wraper">
+<!-- Preloader -->
+<div id="preloader">
+<div class="loader">
+<div class="load-circle"><div></div><div></div></div>
+</div>
+</div>
+<!-- Preloader end-->
+<!-- Header -->
+<header class="header style-2">
+<div class="main-bar">
+<div class="container">
+<div class="header-content">
+<div class="left-content">
+<a class="back-btn" href="javascript:void(0);">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+<h4 class="title font-w600 mb-0 text-nowrap">Wallet</h4>
+</div>
+<div class="mid-content">
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Header -->
+<!-- Page Content -->
+<div class="page-content">
+<div class="container">
+<div class="accordion style-2" id="accordionExample">
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingTwo">
+<button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+<i class="fa-solid fa-credit-card me-2"></i>
+							Credit/Debit Card
+						</button>
+</h2>
+<div aria-labelledby="headingTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo">
+<div class="accordion-body">
+<small class="font-w600 mb-2">Saved Cards</small>
+<!-- Card Select -->
+<div class="d-flex align-items-center mb-3">
+<button class="dz-modal-btn text-dark" data-bs-target="#exampleModalCenter" data-bs-toggle="modal" type="button">Add Card +</button>
+<div class="modal fade" id="exampleModalCenter">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header border-0 pb-0">
+<h5 class="modal-title">ADD CARD</h5>
+<button class="btn-close" data-bs-dismiss="modal">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="modal-body">
+<div class="form">
+<div class="form-item">
+<label class="form-label">Card holder Name</label>
+<input autocomplete="off" class="form-control" required="" type="text"/>
+</div>
+<div class="form-item">
+<label class="form-label">Card Number</label>
+<input autocomplete="off" class="form-control" placeholder="**** **** **** ****" required="" type="number"/>
+</div>
+<div class="d-flex align-items-center">
+<div class="form-item me-2">
+<label class="form-label">Expiry Date</label>
+<input autocomplete="off" class="form-control" placeholder="MM / YY" required="" type="text"/>
+</div>
+<div class="form-item">
+<label class="form-label">Security Code</label>
+<input autocomplete="off" class="form-control" placeholder="..." required="" type="password"/>
+</div>
+</div>
+</div>
+<a class="btn btn-primary d-block" data-bs-dismiss="modal" href="javascript:void(0);">Added</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Select -->
+<div aria-label="radio toggle button" class="short-tag style-4" role="group">
+<div class="clearfix">
+<input checked="" class="btn-check" id="btnradio1" name="btnradio" type="radio"/>
+<label class="btn ms-2 mb-0 tag-btn" for="btnradio1">
+<img alt="" src="xhtml/assets/images/payment/visa.png"/>
+</label>
+</div>
+<div class="clearfix">
+<input class="btn-check" id="btnradio2" name="btnradio" type="radio"/>
+<label class="btn mb-0 tag-btn" for="btnradio2">
+<img alt="" src="xhtml/assets/images/payment/mastercard.png"/>
+</label>
+</div>
+<div class="clearfix">
+<input class="btn-check" id="btnradio3" name="btnradio" type="radio"/>
+<label class="btn mb-0 me-0 tag-btn" for="btnradio3">
+<img alt="" src="xhtml/assets/images/payment/discover.png"/>
+</label>
+</div>
+</div>
+</div>
+<div class="payment-card">
+<div class="card-media">
+<img alt="" src="xhtml/assets/images/payment/card.png"/>
+</div>
+<div class="card-info">
+<div class="clearfix">
+<h5 class="card-name">Credit Card</h5>
+<p class="card-number">4532 **** **** ****</p>
+</div>
+<div class="bottom-info">
+<p>04 / 25</p>
+<p>KEVIN HARD</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingThree">
+<button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+<i class="fa-solid fa-money-check me-2"></i>
+							Google Pay/Other
+						</button>
+</h2>
+<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseThree">
+<div class="accordion-body pt-0">
+<div class="form">
+<div class="form-item">
+<label class="form-label">Link via UPI</label>
+<input autocomplete="off" class="form-control" placeholder="Enter your UPI ID" required="" type="number"/>
+</div>
+<a class="btn btn-primary btn-block" href="javascrpit:void(0);">Continue</a>
+<div class="d-flex align-items-center mt-3">
+<i class="fa-solid fa-shield me-2"></i>
+<p class="info-line">Your UPI ID Will be encrypted and is 100% safe with us.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Page Content End-->
+</div>
+<!--**********************************
+    Scripts
+***********************************-->
+<script src="xhtml/assets/js/jquery.js"></script>
+<script src="xhtml/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="xhtml/assets/vendor/swiper/swiper-bundle.min.js"></script><!-- Swiper -->
+<script src="xhtml/assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script><!-- Swiper -->
+<script src="xhtml/assets/js/dz.carousel.js"></script><!-- Swiper -->
+<script src="xhtml/assets/js/settings.js"></script>
+<script src="xhtml/assets/js/custom.js"></script>
+</body>
+</html>

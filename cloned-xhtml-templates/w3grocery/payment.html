@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover" name="viewport"/>
+<meta content="#92E136" name="theme-color"/>
+<meta content="DexignZone" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="android, ios, mobile, application template, progressive web app, ui kit, multiple color, dark layout" name="keywords"/>
+<meta content="W3Grocery - Complete solution of some popular application like - grocery app, shop vendor app, driver app and progressive web app" name="description"/>
+<meta content="W3Grocery: Pre-Build Grocery Mobile App Template ( Bootstrap 5 + PWA )" property="og:title"/>
+<meta content="W3Grocery - Complete solution of some popular application like - grocery app, shop vendor app, driver app and progressive web app" property="og:description"/>
+<meta content="https://w3grocery.dexignzone.com/xhtml/social-image.png" property="og:image"/>
+<meta content="telephone=no" name="format-detection"/>
+<!-- Favicons Icon -->
+<link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<!-- Title -->
+<title>W3Grocery: Pre-Build Mobile App Template ( Bootstrap 5 + PWA )</title>
+<!-- Global CSS -->
+<link href="xhtml/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet"/>
+<link href="xhtml/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- Stylesheets -->
+<link href="xhtml/assets/css/style.css" rel="stylesheet" type="text/css"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="external/fonts_googleapis_com/css2" rel="stylesheet"/>
+</head>
+<body data-theme-color="color-primary">
+<div class="page-wraper">
+<!-- Preloader -->
+<div id="preloader">
+<div class="loader">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<!-- Preloader end-->
+<!-- Header -->
+<header class="header">
+<div class="main-bar">
+<div class="container">
+<div class="header-content">
+<div class="left-content">
+<a class="back-btn" href="javascript:void(0);">
+<svg height="512" viewbox="0 0 486.65 486.65" width="512"><path d="m202.114 444.648c-8.01-.114-15.65-3.388-21.257-9.11l-171.875-171.572c-11.907-11.81-11.986-31.037-.176-42.945.058-.059.117-.118.176-.176l171.876-171.571c12.738-10.909 31.908-9.426 42.817 3.313 9.736 11.369 9.736 28.136 0 39.504l-150.315 150.315 151.833 150.315c11.774 11.844 11.774 30.973 0 42.817-6.045 6.184-14.439 9.498-23.079 9.11z"></path><path d="m456.283 272.773h-425.133c-16.771 0-30.367-13.596-30.367-30.367s13.596-30.367 30.367-30.367h425.133c16.771 0 30.367 13.596 30.367 30.367s-13.596 30.367-30.367 30.367z"></path>
+</svg>
+</a>
+<h5 class="title mb-0 text-nowrap">Payment</h5>
+</div>
+<div class="mid-content">
+</div>
+<div class="right-content">
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Header End -->
+<!-- Page Content -->
+<div class="page-content">
+<div class="container">
+<div class="title-bar">
+<h6 class="mb-0">Select Payment mode</h6>
+</div>
+<div class="card payment-service">
+<div class="card-header border-0 pb-0">
+<h5 class="card-title sub-title">Cards</h5>
+<div class="active-style"></div>
+</div>
+<div class="card-body">
+<ul class="card-list">
+<li>
+<a class="card-key" data-bs-target="#exampleModalCenter" data-bs-toggle="modal" href="javascript:void(0);">
+<i class="fa-solid fa-credit-card me-2 icon-bx"></i>
+								Add Credit, Debit &amp; ATM Cards
+								<svg class="ms-auto" fill="none" height="14" viewbox="0 0 10 18" width="10" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.25005 17.25C1.05823 17.25 0.866234 17.1767 0.719797 17.0303C0.426734 16.7372 0.426734 16.2626 0.719797 15.9698L7.68955 9.00001L0.719797 2.03026C0.426734 1.7372 0.426734 1.26263 0.719797 0.969757C1.01286 0.676882 1.48742 0.676695 1.7803 0.969757L9.2803 8.46976C9.57336 8.76283 9.57336 9.23739 9.2803 9.53027L1.7803 17.0303C1.63386 17.1767 1.44186 17.25 1.25005 17.25Z" fill="#000"></path>
+</svg>
+</a>
+<div class="modal fade" id="exampleModalCenter">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header border-0 pb-0">
+<h5 class="modal-title">ADD CARD</h5>
+<button class="btn-close" data-bs-dismiss="modal">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="modal-body">
+<div class="form">
+<div class="form-item">
+<label class="form-label">Card holder Name</label>
+<input autocomplete="off" class="form-control" required="" type="text"/>
+</div>
+<div class="form-item">
+<label class="form-label">Card Number</label>
+<input autocomplete="off" class="form-control" placeholder="**** **** **** ****" required="" type="number"/>
+</div>
+<div class="d-flex align-items-center">
+<div class="form-item me-2">
+<label class="form-label">Expiry Date</label>
+<input autocomplete="off" class="form-control" placeholder="MM / YY" required="" type="text"/>
+</div>
+<div class="form-item">
+<label class="form-label">Security Code</label>
+<input autocomplete="off" class="form-control" placeholder="..." required="" type="password"/>
+</div>
+</div>
+</div>
+<a class="btn btn-primary d-block" data-bs-dismiss="modal" href="javascript:void(0);">Added</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="card payment-service">
+<div class="card-header border-0 pb-0">
+<h5 class="card-title sub-title">UPI</h5>
+<div class="active-style"></div>
+</div>
+<div class="card-body">
+<ul class="card-list">
+<li>
+<div class="accordion style-2" id="accordionExample">
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading2">
+<button aria-controls="collapse2" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse2" data-bs-toggle="collapse" type="button">
+<i class="fa-solid fa-money-check icon-bx me-2"></i>
+											Pay via UPI
+										</button>
+</h2>
+<div aria-labelledby="heading2" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapse2">
+<div class="accordion-body">
+<div class="form">
+<div class="form-item">
+<label class="form-label">Link via UPI</label>
+<input autocomplete="off" class="form-control" placeholder="Enter your UPI ID" required="" type="number"/>
+</div>
+<a class="btn btn-primary btn-block" href="javascrpit:void(0);">Continue</a>
+<div class="d-flex align-items-center mt-3">
+<i class="fa-solid fa-shield me-2"></i>
+<p class="info-line">Your UPI ID Will be encrypted and is 100% safe with us.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="card payment-service">
+<div class="card-header border-0 pb-0">
+<h5 class="card-title sub-title">Wallet</h5>
+<div class="active-style"></div>
+</div>
+<div class="card-body">
+<ul class="card-list">
+<li>
+<div class="accordion style-2" id="accordionExample1">
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading3">
+<button aria-controls="collapse3" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse3" data-bs-toggle="collapse" type="button">
+<i class="fa-solid fa-wallet icon-bx me-2"></i>
+											Wallet
+										</button>
+</h2>
+<div aria-labelledby="heading3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" id="collapse3">
+<div class="accordion-body pt-0">
+<div class="form">
+<label class="form-label">Link Your Wallet</label>
+<div class="input-group form-item">
+<span class="input-group-text py-0">
+<a href="javascript:void(0);">
+<img alt="" src="xhtml/assets/images/india-flag-icon.svg"/>
+															91
+														</a>
+</span>
+<input autocomplete="off" class="form-control bs-0" required="" type="number"/>
+</div>
+<a class="btn btn-primary btn-block" href="javascript:void(0);">Continue</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="card payment-service">
+<div class="card-header border-0 pb-0">
+<h5 class="card-title sub-title">Netbanking</h5>
+<div class="active-style"></div>
+</div>
+<div class="card-body">
+<ul class="card-list">
+<li>
+<div class="accordion style-2" id="accordionExample2">
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading4">
+<button aria-controls="collapse4" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse4" data-bs-toggle="collapse" type="button">
+<i class="fa-solid fa-building-columns icon-bx me-2"></i>
+											Netbanking
+										</button>
+</h2>
+<div aria-labelledby="heading4" class="accordion-collapse collapse" data-bs-parent="#accordionExample2" id="collapse4">
+<div class="accordion-body">
+<button aria-controls="offcanvasRight" class="btn btn-outline-primary" data-bs-target="#offcanvasRight" data-bs-toggle="offcanvas" type="button">Netbannking</button>
+</div>
+<div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1">
+<button aria-label="Close" class="btn-close text-reset" data-bs-dismiss="offcanvas" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<div class="offcanvas-body">
+<h2 class="dz-title text-dark mb-3">Tanam</h2>
+<div class="form border-bottom">
+<div class="input-group form-item">
+<span class="input-group-text">
+<a href="javascript:void(0);">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path d="M20.5605 18.4395L16.7528 14.6318C17.5395 13.446 18 12.0262 18 10.5C18 6.3645 14.6355 3 10.5 3C6.3645 3 3 6.3645 3 10.5C3 14.6355 6.3645 18 10.5 18C12.0262 18 13.446 17.5395 14.6318 16.7528L18.4395 20.5605C19.0245 21.1462 19.9755 21.1462 20.5605 20.5605C21.1462 19.9748 21.1462 19.0252 20.5605 18.4395ZM5.25 10.5C5.25 7.605 7.605 5.25 10.5 5.25C13.395 5.25 15.75 7.605 15.75 10.5C15.75 13.395 13.395 15.75 10.5 15.75C7.605 15.75 5.25 13.395 5.25 10.5Z" fill="#B9B9B9"></path>
+</svg>
+</a>
+</span>
+<input autocomplete="off" class="form-control bs-0" placeholder="Search By Bank Name" required="" type="Search"/>
+</div>
+</div>
+<h5 class="title-bar">All Banks</h5>
+<ul class="item-list">
+<li class="list">
+<a href="javascript:void(0);">
+															Bank Of india
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															Bank Of Maharasthra
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															Canara Bank
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															HDFC Bank
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															IDFC Bank
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															Catholic Syrian Bank
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															Catholic Syrian Bank
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															Central Bank of India
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															City Union Bank
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															Corporation Bank
+														</a>
+</li>
+<li class="list">
+<a href="javascript:void(0);">
+															Cosmos Bank
+														</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Page Content End-->
+</div>
+<!--**********************************
+    Scripts
+***********************************-->
+<script src="xhtml/assets/js/jquery.js"></script>
+<script src="xhtml/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="xhtml/assets/js/dz.carousel.js"></script><!-- Swiper -->
+<script src="xhtml/assets/vendor/swiper/swiper-bundle.min.js"></script><!-- Swiper -->
+<script src="xhtml/assets/js/settings.js"></script>
+<script src="xhtml/assets/js/custom.js"></script>
+</body>
+</html>
