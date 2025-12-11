@@ -26,42 +26,325 @@ const Portfolio = () => {
 
   const baseUrl = 'https://swigo.dexignzone.com';
 
+  // Portfolio items with all templates from DexignZone
   const portfolioItems = [
     {
-      title: 'E-Commerce Website',
-      category: 'Website Development',
-      image: `${baseUrl}/welcome/images/demo/index-full.png`,
-      description: 'Modern e-commerce platform with advanced features'
+      title: 'ClinicMaster',
+      category: 'Medical & Hospital',
+      image: '/images/portfolio/clinicmaster.png',
+      description: 'Medical Hospital & Doctor Multipurpose Bootstrap HTML Template'
     },
     {
-      title: 'Business Portal',
-      category: 'Web Development',
-      image: `${baseUrl}/welcome/images/demo/index-2-full.png`,
-      description: 'Corporate business portal with integrated solutions'
+      title: 'InkVoice',
+      category: 'Blog & Magazine',
+      image: '/images/portfolio/inkvoice.png',
+      description: 'Creative Blog & Magazine Bootstrap HTML Template'
     },
     {
-      title: 'Mobile Banking App',
-      category: 'Mobile App',
-      image: `${baseUrl}/welcome/images/demo/index-3-full.png`,
-      description: 'Secure mobile banking application'
+      title: 'Footflare',
+      category: 'E-Commerce',
+      image: '/images/portfolio/footflare.png',
+      description: 'Shop & eCommerce Bootstrap HTML Template'
     },
     {
-      title: 'SaaS Platform',
-      category: 'Web Development',
-      image: `${baseUrl}/welcome/images/demo/index-4-full.png`,
-      description: 'Cloud-based SaaS platform'
+      title: 'PlantZone',
+      category: 'E-Commerce',
+      image: '/images/portfolio/plantzone.png',
+      description: 'Shop & eCommerce Bootstrap HTML Template'
     },
     {
-      title: 'Restaurant Website',
-      category: 'Website Design',
-      image: `${baseUrl}/welcome/images/demo/index-full.png`,
-      description: 'Beautiful restaurant website with online ordering'
+      title: 'W3Music',
+      category: 'Music & Entertainment',
+      image: '/images/portfolio/w3music.png',
+      description: 'Music, Band, DJ Bootstrap HTML Template'
     },
     {
-      title: 'Corporate Website',
-      category: 'Web Development',
-      image: `${baseUrl}/welcome/images/demo/index-2-full.png`,
-      description: 'Professional corporate website design'
+      title: 'Pixio',
+      category: 'E-Commerce',
+      image: '/images/portfolio/pixio.png',
+      description: 'Shop & eCommerce Bootstrap HTML Template'
+    },
+    {
+      title: 'PowerZone',
+      category: 'Fitness & Gym',
+      image: '/images/portfolio/powerzone.png',
+      description: 'Fitness, Workout & Gym HTML Template'
+    },
+    {
+      title: 'Swigo',
+      category: 'Restaurant & Food',
+      image: '/images/portfolio/swigo.png',
+      description: 'Fast Food And Restaurant HTML Template'
+    },
+    {
+      title: 'BodyClub',
+      category: 'Fitness & Gym',
+      image: '/images/portfolio/bodyclub.png',
+      description: 'Fitness, Workout & Gym HTML Template'
+    },
+    {
+      title: 'BodyShape',
+      category: 'Fitness & Gym',
+      image: '/images/portfolio/bodyshape.png',
+      description: 'Fitness, Workout & Gym HTML Template'
+    },
+    {
+      title: 'Akcel',
+      category: 'Charity & Crowdfunding',
+      image: '/images/portfolio/akcel.png',
+      description: 'Crowdfunding & Charity HTML5 Template'
+    },
+    {
+      title: 'Bookland',
+      category: 'E-Commerce',
+      image: '/images/portfolio/bookland.png',
+      description: 'Bookstore E-commerce Bootstrap 5 HTML Template'
+    },
+    {
+      title: 'Industry',
+      category: 'Industrial & Factory',
+      image: '/images/portfolio/industry.png',
+      description: 'Factory & Industrial Template + RTL Ready'
+    },
+    {
+      title: 'ConstructZilla',
+      category: 'Construction',
+      image: '/images/portfolio/constructzilla.png',
+      description: 'Construction, Renovation & Building Bootstrap 4 & 5 Template With RTL Ready'
+    },
+    {
+      title: 'Agency',
+      category: 'Creative Agency',
+      image: '/images/portfolio/agency.png',
+      description: 'Creative Multipurpose HTML with RTL Ready'
+    },
+    {
+      title: 'CargoZone',
+      category: 'Transport & Logistics',
+      image: '/images/portfolio/cargozone.png',
+      description: 'Transport, Cargo, Logistics & Business Multipurpose HTML Template'
+    },
+    {
+      title: 'MediCo',
+      category: 'Medical & Hospital',
+      image: '/images/portfolio/medico.png',
+      description: 'Covid-19 & Hospital Doctor & Medical Clinic HTML Template'
+    },
+    {
+      title: 'ButterFly',
+      category: 'Beauty & Spa',
+      image: '/images/portfolio/butterfly.png',
+      description: 'Spa, Beauty Salon & Massage Template'
+    },
+    {
+      title: 'Job Board',
+      category: 'Job Portal',
+      image: '/images/portfolio/jobboard.png',
+      description: 'Job Portal HTML Template + RTL'
+    },
+    {
+      title: 'YogaZone',
+      category: 'Fitness & Yoga',
+      image: '/images/portfolio/yogazone.png',
+      description: 'Yoga, Fitness & Meditation Mobile Responsive Bootstrap Html Template'
+    },
+    {
+      title: 'GardenZone',
+      category: 'Agriculture',
+      image: '/images/portfolio/gardenzone.png',
+      description: 'Agriculture, Gardening & Landscaping Responsive HTML Template'
+    },
+    {
+      title: 'Construct',
+      category: 'Construction',
+      image: '/images/portfolio/construct.png',
+      description: 'Construction, Building & Maintenance Business Template'
+    },
+    {
+      title: 'BeautyZone',
+      category: 'Beauty & Spa',
+      image: '/images/portfolio/beautyzone-html.png',
+      description: 'Beauty Spa Salon & Massage HTML Template'
+    },
+    {
+      title: 'EduZone',
+      category: 'Education',
+      image: '/images/portfolio/eduzone.png',
+      description: 'Education Course & School Template + Admin Dashboard'
+    },
+    {
+      title: 'Archia',
+      category: 'Architecture',
+      image: '/images/portfolio/archia.png',
+      description: 'Architecture and Interior Design RTL Ready Template'
+    },
+    {
+      title: 'Wedding Manager',
+      category: 'Event Management',
+      image: '/images/portfolio/wedding-manager.png',
+      description: 'Manage Wedding Events and Vendor Listing Event Management WireFrame'
+    },
+    {
+      title: 'CoviMap',
+      category: 'Medical',
+      image: '/images/portfolio/covimap.png',
+      description: 'Coronavirus (Covid-19) Medical Prevention Template'
+    },
+    {
+      title: 'RestroKing',
+      category: 'Restaurant & Food',
+      image: '/images/portfolio/restroking.png',
+      description: 'Cake Pizza & Bakery Bootstrap 4 Template'
+    },
+    {
+      title: 'Frost',
+      category: 'Coming Soon',
+      image: '/images/portfolio/frost.png',
+      description: 'Coming Soon, Under Construction Bootstrap 4 Template'
+    },
+    {
+      title: 'KingArchitect',
+      category: 'Architecture',
+      image: '/images/portfolio/kingarchitect.png',
+      description: 'Creative Interior Design Website Template'
+    },
+    {
+      title: 'LeMars',
+      category: 'Blog',
+      image: '/images/portfolio/lemars.png',
+      description: 'Personal Blog Bootstrap 4 Template With PSD Files'
+    },
+    {
+      title: 'Karciz',
+      category: 'Event Management',
+      image: '/images/portfolio/karciz.png',
+      description: 'Event Ticketing Bootstrap Admin Template'
+    },
+    {
+      title: 'CURV',
+      category: 'Multipurpose',
+      image: '/images/portfolio/curv.png',
+      description: 'One Page Multipurpose Parallax'
+    },
+    {
+      title: 'TradeZone',
+      category: 'Industrial',
+      image: '/images/portfolio/tradezone.png',
+      description: 'Factory & Industrial One Page HTML Template'
+    },
+    {
+      title: 'ConsultZone',
+      category: 'Consulting',
+      image: '/images/portfolio/consultzone.png',
+      description: 'Multipurpose Consulting Bootstrap 5 HTML Template + RTL version'
+    },
+    {
+      title: 'Lavi',
+      category: 'Beauty & Spa',
+      image: '/images/portfolio/lavi.png',
+      description: 'Beauty Spa Salon Makeup Parlour Bootstrap 4 Template'
+    },
+    {
+      title: 'Zapolo',
+      category: 'Agency & Software',
+      image: '/images/portfolio/zapolo.png',
+      description: 'Agency App & Software Bootstrap 5 HTML Template'
+    },
+    {
+      title: 'Mazo',
+      category: 'Industrial',
+      image: '/images/portfolio/mazo.png',
+      description: 'Industry & Factory Bootstrap 5 HTML Template + RTL'
+    },
+    {
+      title: 'Shivaa',
+      category: 'Creative Agency',
+      image: '/images/portfolio/shivaa.png',
+      description: 'Creative Agency Bootstrap Template'
+    },
+    {
+      title: 'ArchCode',
+      category: 'Architecture',
+      image: '/images/portfolio/archcode.png',
+      description: 'Architecture Bootstrap 5 HTML Template'
+    },
+    {
+      title: 'Visva',
+      category: 'Architecture',
+      image: '/images/portfolio/visva.png',
+      description: 'Architect & Interior Design Bootstrap 5 Template'
+    },
+    {
+      title: 'CoDesign',
+      category: 'Architecture',
+      image: '/images/portfolio/codesign.png',
+      description: 'Architect & Interior Design HTML Template'
+    },
+    {
+      title: 'Samar',
+      category: 'Creative Agency',
+      image: '/images/portfolio/samar.png',
+      description: 'Creative Agency Bootstrap Template'
+    },
+    {
+      title: 'SportsZone',
+      category: 'Sports',
+      image: '/images/portfolio/sportszone.png',
+      description: 'Sports Club, New & Game Magazine Mobile Responsive Bootstrap HTML Template'
+    },
+    {
+      title: 'BizMap',
+      category: 'Business Directory',
+      image: '/images/portfolio/bizmap.png',
+      description: 'Business Directory Listing HTML Template'
+    },
+    {
+      title: 'Kelsey',
+      category: 'Blog',
+      image: '/images/portfolio/kelsey.png',
+      description: 'Creative Personal Blog HTML Template'
+    },
+    {
+      title: 'Umang Academy',
+      category: 'Education',
+      image: '/images/portfolio/umang.png',
+      description: 'Kindergarden, Kids Play School Template'
+    },
+    {
+      title: 'Bucklin',
+      category: 'Blog',
+      image: '/images/portfolio/bucklin.png',
+      description: 'Creative Personal Blog HTML Template'
+    },
+    {
+      title: 'SmartClass',
+      category: 'Education',
+      image: '/images/portfolio/smartclass.png',
+      description: 'Education Agency Coaching & Tuition HTML Template'
+    },
+    {
+      title: 'SMART',
+      category: 'Corporate Agency',
+      image: '/images/portfolio/smart.png',
+      description: 'Creative Corporate Agency Template'
+    },
+    {
+      title: 'MyDiary',
+      category: 'Blog & Magazine',
+      image: '/images/portfolio/mydiary.png',
+      description: 'Newspaper Magazine & Personal Blog HTML Template'
+    },
+    {
+      title: 'Corella',
+      category: 'Medical',
+      image: '/images/portfolio/corella.png',
+      description: 'Coronavirus (COVID-19) Social Awareness And Medical Prevention Template'
+    },
+    {
+      title: 'Indiro',
+      category: 'Industrial',
+      image: '/images/portfolio/indiro.png',
+      description: 'Factory and Industry Bootstrap 5 HTML Template + RTL'
     }
   ];
 
@@ -179,12 +462,18 @@ const Portfolio = () => {
             </div>
             <div className="row">
               {[
-                { title: 'Web Development', count: '120+', icon: 'fas fa-globe', color: 'primary' },
-                { title: 'Mobile Apps', count: '80+', icon: 'fas fa-mobile-alt', color: 'success' },
-                { title: 'UI/UX Design', count: '150+', icon: 'fas fa-palette', color: 'warning' },
-                { title: 'E-Commerce', count: '90+', icon: 'fas fa-shopping-cart', color: 'info' },
-                { title: 'Branding', count: '70+', icon: 'fas fa-paint-brush', color: 'danger' },
-                { title: 'Digital Marketing', count: '100+', icon: 'fas fa-bullhorn', color: 'primary' }
+                { title: 'E-Commerce', count: '4+', icon: 'fas fa-shopping-cart', color: 'primary' },
+                { title: 'Medical & Hospital', count: '3+', icon: 'fas fa-hospital', color: 'success' },
+                { title: 'Fitness & Gym', count: '4+', icon: 'fas fa-dumbbell', color: 'warning' },
+                { title: 'Architecture', count: '5+', icon: 'fas fa-building', color: 'info' },
+                { title: 'Creative Agency', count: '4+', icon: 'fas fa-paint-brush', color: 'danger' },
+                { title: 'Restaurant & Food', count: '2+', icon: 'fas fa-utensils', color: 'primary' },
+                { title: 'Education', count: '3+', icon: 'fas fa-graduation-cap', color: 'success' },
+                { title: 'Industrial', count: '4+', icon: 'fas fa-industry', color: 'warning' },
+                { title: 'Blog & Magazine', count: '4+', icon: 'fas fa-newspaper', color: 'info' },
+                { title: 'Beauty & Spa', count: '3+', icon: 'fas fa-spa', color: 'danger' },
+                { title: 'Event Management', count: '2+', icon: 'fas fa-calendar-alt', color: 'primary' },
+                { title: 'Consulting', count: '1+', icon: 'fas fa-briefcase', color: 'success' }
               ].map((category, index) => (
                 <div key={index} className="col-md-4 col-sm-6 mb-4">
                   <div className="category-box text-center wow fadeInUp" data-wow-duration="0.6s" data-wow-delay={`${index * 0.1}s`}>
@@ -210,10 +499,10 @@ const Portfolio = () => {
             </div>
             <div className="row">
               {[
-                { number: '500+', label: 'Projects Delivered', icon: 'fas fa-project-diagram' },
-                { number: '300+', label: 'Satisfied Clients', icon: 'fas fa-smile' },
-                { number: '50+', label: 'Team Members', icon: 'fas fa-users' },
-                { number: '10+', label: 'Years Experience', icon: 'fas fa-award' }
+                { number: '53+', label: 'Templates Created', icon: 'fas fa-project-diagram' },
+                { number: '23,500+', label: 'Happy Clients', icon: 'fas fa-smile' },
+                { number: '160+', label: 'Total Products', icon: 'fas fa-box' },
+                { number: '8+', label: 'Years Experience', icon: 'fas fa-award' }
               ].map((stat, index) => (
                 <div key={index} className="col-md-3 col-sm-6 mb-4">
                   <div className="stat-card text-center wow fadeInUp" data-wow-duration="0.6s" data-wow-delay={`${index * 0.1}s`}>
