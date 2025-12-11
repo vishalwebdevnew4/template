@@ -195,22 +195,22 @@ const Home = () => {
             <div className="grid-row">
               <div className="grid-item grid-item1">
                 <div className="desktop-frame">
-                  <img src={`${baseUrl}/welcome/images/banner/bnr5.jpg`} alt="" />
+                  <img src="/images/portfolio/agency.png" alt="" />
                 </div>
               </div>
               <div className="grid-item grid-item2">
                 <div className="desktop-frame">
-                  <img src={`${baseUrl}/welcome/images/banner/bnr3.jpg`} alt="" />
+                  <img src="/images/portfolio/plantzone.png" alt="" />
                 </div>
               </div>
               <div className="grid-item grid-item3">
                 <div className="desktop-frame">
-                  <img src={`${baseUrl}/welcome/images/banner/bnr6.jpg`} alt="" />
+                  <img src="/images/portfolio/gardenzone.png" alt="" />
                 </div>
               </div>
               <div className="grid-item grid-item4">
                 <div className="desktop-frame">
-                  <img src={`${baseUrl}/welcome/images/banner/bnr1.jpg`} alt="" />
+                  <img src="/images/portfolio/swigo.png" alt="" />
                 </div>
                 <h2 className="bg-data-text">
                   <span>DIGITAL AGENCY</span>
@@ -218,7 +218,7 @@ const Home = () => {
               </div>
               <div className="grid-item grid-item5">
                 <div className="desktop-frame">
-                  <img src={`${baseUrl}/welcome/images/banner/bnr2.jpg`} alt="" />
+                  <img src="/images/portfolio/consultzone.png" alt="" />
                 </div>
               </div>
             </div>
@@ -295,7 +295,7 @@ const Home = () => {
                   </div>
                   <div className="demo-img">
                     <a target="_blank" href={`${baseUrl}/xhtml/index-4.html?data-color=color_7`}>
-                      <img src={`${baseUrl}/welcome/images/demo/index-4-full.png`} alt="" />
+                      <img src="/images/portfolio/plantzone.png" alt="" />
                     </a>
                   </div>
                   <div className="demo-info">
@@ -363,7 +363,7 @@ const Home = () => {
                   </div>
                   <div className="demo-img">
                     <a target="_blank" href={`${baseUrl}/xhtml/index.html?data-color=color_1`}>
-                      <img src={`${baseUrl}/welcome/images/demo/index-full.png`} alt="" />
+                      <img src="/images/portfolio/swigo.png" alt="" />
                     </a>
                   </div>
                   <div className="demo-info">
@@ -421,7 +421,7 @@ const Home = () => {
                   </div>
                   <div className="demo-img">
                     <a target="_blank" href={`${baseUrl}/xhtml/index-2.html?data-color=color_2`}>
-                      <img src={`${baseUrl}/welcome/images/demo/index-2-full.png`} alt="" />
+                      <img src="/images/portfolio/gardenzone.png" alt="" />
                     </a>
                   </div>
                   <div className="demo-info">
@@ -471,7 +471,7 @@ const Home = () => {
                   </div>
                   <div className="demo-img">
                     <a target="_blank" href={`${baseUrl}/xhtml/index-3.html?data-color=color_3`}>
-                      <img src={`${baseUrl}/welcome/images/demo/index-3-full.png`} alt="" />
+                      <img src="/images/portfolio/footflare.png" alt="" />
                     </a>
                   </div>
                   <div className="demo-info">
@@ -502,7 +502,7 @@ const Home = () => {
                   <a href={`${baseUrl}/xhtml/index.html`} className="demobox" target="_blank" rel="noopener noreferrer">
                     <div className="media">
                       <div className="demo-page">
-                        <img src={`${baseUrl}/welcome/images/demo/index-tab-1.png`} alt="" />
+                        <img src="/images/portfolio/swigo.png" alt="" />
                       </div>
                     </div>
                     <div className="dz-title">Home Page 1</div>
@@ -514,7 +514,7 @@ const Home = () => {
                   <a href={`${baseUrl}/xhtml/index.html`} className="demobox" target="_blank" rel="noopener noreferrer">
                     <div className="media">
                       <div className="demo-page">
-                        <img src={`${baseUrl}/welcome/images/demo/index-mobile-1.png`} alt="" />
+                        <img src="/images/portfolio/plantzone.png" alt="" />
                       </div>
                     </div>
                     <div className="dz-title">Home Page 1</div>
@@ -526,7 +526,7 @@ const Home = () => {
                   <a href={`${baseUrl}/xhtml/index-2.html`} className="demobox" target="_blank" rel="noopener noreferrer">
                     <div className="media">
                       <div className="demo-page">
-                        <img src={`${baseUrl}/welcome/images/demo/index-tab-2.png`} alt="" />
+                        <img src="/images/portfolio/gardenzone.png" alt="" />
                       </div>
                     </div>
                     <div className="dz-title">Home Page 2</div>
@@ -538,7 +538,7 @@ const Home = () => {
                   <a href={`${baseUrl}/xhtml/index-2.html`} className="demobox" target="_blank" rel="noopener noreferrer">
                     <div className="media">
                       <div className="demo-page">
-                        <img src={`${baseUrl}/welcome/images/demo/index-mobile-2.png`} alt="" />
+                        <img src="/images/portfolio/footflare.png" alt="" />
                       </div>
                     </div>
                     <div className="dz-title">Home Page 2</div>
@@ -550,7 +550,7 @@ const Home = () => {
                   <a href={`${baseUrl}/xhtml/index-3.html`} className="demobox" target="_blank" rel="noopener noreferrer">
                     <div className="media">
                       <div className="demo-page">
-                        <img src={`${baseUrl}/welcome/images/demo/index-tab-3.png`} alt="" />
+                        <img src="/images/portfolio/pixio.png" alt="" />
                       </div>
                     </div>
                     <div className="dz-title">Home Page 3</div>
@@ -562,7 +562,7 @@ const Home = () => {
                   <a href={`${baseUrl}/xhtml/index-3.html`} className="demobox" target="_blank" rel="noopener noreferrer">
                     <div className="media">
                       <div className="demo-page">
-                        <img src={`${baseUrl}/welcome/images/demo/index-mobile-3.png`} alt="" />
+                        <img src="/images/portfolio/bookland.png" alt="" />
                       </div>
                     </div>
                     <div className="dz-title">Home Page 3</div>
@@ -574,7 +574,7 @@ const Home = () => {
                   <a href={`${baseUrl}/xhtml/index-4.html`} className="demobox" target="_blank" rel="noopener noreferrer">
                     <div className="media">
                       <div className="demo-page">
-                        <img src={`${baseUrl}/welcome/images/demo/index-tab-4.png`} alt="" />
+                        <img src="/images/portfolio/inkvoice.png" alt="" />
                       </div>
                     </div>
                     <div className="dz-title">Home Page 4</div>
@@ -586,7 +586,7 @@ const Home = () => {
                   <a href={`${baseUrl}/xhtml/index-4.html`} className="demobox" target="_blank" rel="noopener noreferrer">
                     <div className="media">
                       <div className="demo-page">
-                        <img src={`${baseUrl}/welcome/images/demo/index-mobile-4.png`} alt="" />
+                        <img src="/images/portfolio/w3music.png" alt="" />
                       </div>
                     </div>
                     <div className="dz-title">Home Page 4</div>
@@ -614,20 +614,44 @@ const Home = () => {
                   <h2>Discover Your Website with Our Awesome Inner Pages</h2>
                 </div>
               </div>
-              {innerPages.map((page, index) => (
-                <div key={index} className="col-md-6 col-xl-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay={`${(index % 10) * 0.1 + 0.1}s`}>
-                  <div className="demo-box">
-                    <div className="demo-area">
-                      <a href={`${baseUrl}/xhtml/${page.link}`} className="demo-media" target="_blank" rel="noopener noreferrer">
-                        <img src={`${baseUrl}/welcome/images/inner-page/${page.img}`} alt="" />
-                      </a>
-                      <div className="demo-info">
-                        <h4 className="dz-title"><a href={`${baseUrl}/xhtml/${page.link}`} target="_blank" rel="noopener noreferrer">{page.name}</a></h4>
+              {innerPages.map((page, index) => {
+                // Map inner pages to portfolio images
+                const portfolioImages = [
+                  '/images/portfolio/clinicmaster.png', '/images/portfolio/inkvoice.png', '/images/portfolio/footflare.png',
+                  '/images/portfolio/plantzone.png', '/images/portfolio/w3music.png', '/images/portfolio/pixio.png',
+                  '/images/portfolio/powerzone.png', '/images/portfolio/swigo.png', '/images/portfolio/bodyclub.png',
+                  '/images/portfolio/bodyshape.png', '/images/portfolio/akcel.png', '/images/portfolio/bookland.png',
+                  '/images/portfolio/industry.png', '/images/portfolio/constructzilla.png', '/images/portfolio/agency.png',
+                  '/images/portfolio/cargozone.png', '/images/portfolio/medico.png', '/images/portfolio/butterfly.png',
+                  '/images/portfolio/jobboard.png', '/images/portfolio/yogazone.png', '/images/portfolio/gardenzone.png',
+                  '/images/portfolio/construct.png', '/images/portfolio/beautyzone-html.png', '/images/portfolio/eduzone.png',
+                  '/images/portfolio/archia.png', '/images/portfolio/wedding-manager.png', '/images/portfolio/covimap.png',
+                  '/images/portfolio/restroking.png', '/images/portfolio/frost.png', '/images/portfolio/kingarchitect.png',
+                  '/images/portfolio/lemars.png', '/images/portfolio/karciz.png', '/images/portfolio/curv.png',
+                  '/images/portfolio/tradezone.png', '/images/portfolio/consultzone.png', '/images/portfolio/lavi.png',
+                  '/images/portfolio/zapolo.png', '/images/portfolio/mazo.png', '/images/portfolio/shivaa.png',
+                  '/images/portfolio/archcode.png', '/images/portfolio/visva.png', '/images/portfolio/codesign.png',
+                  '/images/portfolio/samar.png', '/images/portfolio/sportszone.png', '/images/portfolio/bizmap.png',
+                  '/images/portfolio/kelsey.png', '/images/portfolio/umang.png', '/images/portfolio/bucklin.png',
+                  '/images/portfolio/smartclass.png', '/images/portfolio/smart.png', '/images/portfolio/mydiary.png',
+                  '/images/portfolio/corella.png', '/images/portfolio/indiro.png'
+                ];
+                const portfolioImage = portfolioImages[index % portfolioImages.length];
+                return (
+                  <div key={index} className="col-md-6 col-xl-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay={`${(index % 10) * 0.1 + 0.1}s`}>
+                    <div className="demo-box">
+                      <div className="demo-area">
+                        <a href={`${baseUrl}/xhtml/${page.link}`} className="demo-media" target="_blank" rel="noopener noreferrer">
+                          <img src={portfolioImage} alt="" />
+                        </a>
+                        <div className="demo-info">
+                          <h4 className="dz-title"><a href={`${baseUrl}/xhtml/${page.link}`} target="_blank" rel="noopener noreferrer">{page.name}</a></h4>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
             <div className="text-right">
               <a href="#SupportSection" className="need-any-help">
