@@ -879,6 +879,98 @@ const Home = () => {
           </div>
         </div>
 
+        {/* Portfolio Section */}
+        <div className="section-full bg-gray bg-img-fix content-inner pb-3">
+          <div className="container-fluid">
+            <div className="section-head title-box text-center">
+              <h6 className="sub-title text-secondary">Our Portfolio</h6>
+              <h2>Explore Our Complete Template Collection</h2>
+            </div>
+            <div className="row sp50 justify-content-center">
+              {[
+                { title: 'ClinicMaster', category: 'Medical & Hospital', image: '/images/portfolio/clinicmaster.png', description: 'Medical Hospital & Doctor Multipurpose Bootstrap HTML Template' },
+                { title: 'InkVoice', category: 'Blog & Magazine', image: '/images/portfolio/inkvoice.png', description: 'Creative Blog & Magazine Bootstrap HTML Template' },
+                { title: 'Footflare', category: 'E-Commerce', image: '/images/portfolio/footflare.png', description: 'Shop & eCommerce Bootstrap HTML Template' },
+                { title: 'PlantZone', category: 'E-Commerce', image: '/images/portfolio/plantzone.png', description: 'Shop & eCommerce Bootstrap HTML Template' },
+                { title: 'W3Music', category: 'Music & Entertainment', image: '/images/portfolio/w3music.png', description: 'Music, Band, DJ Bootstrap HTML Template' },
+                { title: 'Pixio', category: 'E-Commerce', image: '/images/portfolio/pixio.png', description: 'Shop & eCommerce Bootstrap HTML Template' },
+                { title: 'PowerZone', category: 'Fitness & Gym', image: '/images/portfolio/powerzone.png', description: 'Fitness, Workout & Gym HTML Template' },
+                { title: 'Swigo', category: 'Restaurant & Food', image: '/images/portfolio/swigo.png', description: 'Fast Food And Restaurant HTML Template' },
+                { title: 'BodyClub', category: 'Fitness & Gym', image: '/images/portfolio/bodyclub.png', description: 'Fitness, Workout & Gym HTML Template' },
+                { title: 'BodyShape', category: 'Fitness & Gym', image: '/images/portfolio/bodyshape.png', description: 'Fitness, Workout & Gym HTML Template' },
+                { title: 'Akcel', category: 'Charity & Crowdfunding', image: '/images/portfolio/akcel.png', description: 'Crowdfunding & Charity HTML5 Template' },
+                { title: 'Bookland', category: 'E-Commerce', image: '/images/portfolio/bookland.png', description: 'Bookstore E-commerce Bootstrap 5 HTML Template' },
+                { title: 'Industry', category: 'Industrial & Factory', image: '/images/portfolio/industry.png', description: 'Factory & Industrial Template + RTL Ready' },
+                { title: 'ConstructZilla', category: 'Construction', image: '/images/portfolio/constructzilla.png', description: 'Construction, Renovation & Building Bootstrap 4 & 5 Template With RTL Ready' },
+                { title: 'Agency', category: 'Creative Agency', image: '/images/portfolio/agency.png', description: 'Creative Multipurpose HTML with RTL Ready' },
+                { title: 'CargoZone', category: 'Transport & Logistics', image: '/images/portfolio/cargozone.png', description: 'Transport, Cargo, Logistics & Business Multipurpose HTML Template' },
+                { title: 'MediCo', category: 'Medical & Hospital', image: '/images/portfolio/medico.png', description: 'Covid-19 & Hospital Doctor & Medical Clinic HTML Template' },
+                { title: 'ButterFly', category: 'Beauty & Spa', image: '/images/portfolio/butterfly.png', description: 'Spa, Beauty Salon & Massage Template' },
+                { title: 'Job Board', category: 'Job Portal', image: '/images/portfolio/jobboard.png', description: 'Job Portal HTML Template + RTL' },
+                { title: 'YogaZone', category: 'Fitness & Yoga', image: '/images/portfolio/yogazone.png', description: 'Yoga, Fitness & Meditation Mobile Responsive Bootstrap Html Template' },
+                { title: 'GardenZone', category: 'Agriculture', image: '/images/portfolio/gardenzone.png', description: 'Agriculture, Gardening & Landscaping Responsive HTML Template' },
+                { title: 'Construct', category: 'Construction', image: '/images/portfolio/construct.png', description: 'Construction, Building & Maintenance Business Template' },
+                { title: 'BeautyZone', category: 'Beauty & Spa', image: '/images/portfolio/beautyzone-html.png', description: 'Beauty Spa Salon & Massage HTML Template' },
+                { title: 'EduZone', category: 'Education', image: '/images/portfolio/eduzone.png', description: 'Education Course & School Template + Admin Dashboard' },
+                { title: 'Archia', category: 'Architecture', image: '/images/portfolio/archia.png', description: 'Architecture and Interior Design RTL Ready Template' },
+                { title: 'Wedding Manager', category: 'Event Management', image: '/images/portfolio/wedding-manager.png', description: 'Manage Wedding Events and Vendor Listing Event Management WireFrame' },
+                { title: 'CoviMap', category: 'Medical', image: '/images/portfolio/covimap.png', description: 'Coronavirus (Covid-19) Medical Prevention Template' },
+                { title: 'RestroKing', category: 'Restaurant & Food', image: '/images/portfolio/restroking.png', description: 'Cake Pizza & Bakery Bootstrap 4 Template' },
+                { title: 'Frost', category: 'Coming Soon', image: '/images/portfolio/frost.png', description: 'Coming Soon, Under Construction Bootstrap 4 Template' },
+                { title: 'KingArchitect', category: 'Architecture', image: '/images/portfolio/kingarchitect.png', description: 'Creative Interior Design Website Template' },
+                { title: 'LeMars', category: 'Blog', image: '/images/portfolio/lemars.png', description: 'Personal Blog Bootstrap 4 Template With PSD Files' },
+                { title: 'Karciz', category: 'Event Management', image: '/images/portfolio/karciz.png', description: 'Event Ticketing Bootstrap Admin Template' },
+                { title: 'CURV', category: 'Multipurpose', image: '/images/portfolio/curv.png', description: 'One Page Multipurpose Parallax' },
+                { title: 'TradeZone', category: 'Industrial', image: '/images/portfolio/tradezone.png', description: 'Factory & Industrial One Page HTML Template' },
+                { title: 'ConsultZone', category: 'Consulting', image: '/images/portfolio/consultzone.png', description: 'Multipurpose Consulting Bootstrap 5 HTML Template + RTL version' },
+                { title: 'Lavi', category: 'Beauty & Spa', image: '/images/portfolio/lavi.png', description: 'Beauty Spa Salon Makeup Parlour Bootstrap 4 Template' },
+                { title: 'Zapolo', category: 'Agency & Software', image: '/images/portfolio/zapolo.png', description: 'Agency App & Software Bootstrap 5 HTML Template' },
+                { title: 'Mazo', category: 'Industrial', image: '/images/portfolio/mazo.png', description: 'Industry & Factory Bootstrap 5 HTML Template + RTL' },
+                { title: 'Shivaa', category: 'Creative Agency', image: '/images/portfolio/shivaa.png', description: 'Creative Agency Bootstrap Template' },
+                { title: 'ArchCode', category: 'Architecture', image: '/images/portfolio/archcode.png', description: 'Architecture Bootstrap 5 HTML Template' },
+                { title: 'Visva', category: 'Architecture', image: '/images/portfolio/visva.png', description: 'Architect & Interior Design Bootstrap 5 Template' },
+                { title: 'CoDesign', category: 'Architecture', image: '/images/portfolio/codesign.png', description: 'Architect & Interior Design HTML Template' },
+                { title: 'Samar', category: 'Creative Agency', image: '/images/portfolio/samar.png', description: 'Creative Agency Bootstrap Template' },
+                { title: 'SportsZone', category: 'Sports', image: '/images/portfolio/sportszone.png', description: 'Sports Club, New & Game Magazine Mobile Responsive Bootstrap HTML Template' },
+                { title: 'BizMap', category: 'Business Directory', image: '/images/portfolio/bizmap.png', description: 'Business Directory Listing HTML Template' },
+                { title: 'Kelsey', category: 'Blog', image: '/images/portfolio/kelsey.png', description: 'Creative Personal Blog HTML Template' },
+                { title: 'Umang Academy', category: 'Education', image: '/images/portfolio/umang.png', description: 'Kindergarden, Kids Play School Template' },
+                { title: 'Bucklin', category: 'Blog', image: '/images/portfolio/bucklin.png', description: 'Creative Personal Blog HTML Template' },
+                { title: 'SmartClass', category: 'Education', image: '/images/portfolio/smartclass.png', description: 'Education Agency Coaching & Tuition HTML Template' },
+                { title: 'SMART', category: 'Corporate Agency', image: '/images/portfolio/smart.png', description: 'Creative Corporate Agency Template' },
+                { title: 'MyDiary', category: 'Blog & Magazine', image: '/images/portfolio/mydiary.png', description: 'Newspaper Magazine & Personal Blog HTML Template' },
+                { title: 'Corella', category: 'Medical', image: '/images/portfolio/corella.png', description: 'Coronavirus (COVID-19) Social Awareness And Medical Prevention Template' },
+                { title: 'Indiro', category: 'Industrial', image: '/images/portfolio/indiro.png', description: 'Factory and Industry Bootstrap 5 HTML Template + RTL' }
+              ].map((item, index) => (
+                <div key={index} className="col-md-6 col-xl-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay={`${(index % 10) * 0.1 + 0.1}s`}>
+                  <div className="demo-box">
+                    <div className="demo-area">
+                      <a href="/portfolio" className="demo-media">
+                        <img src={item.image} alt={item.title} />
+                      </a>
+                      <div className="demo-info">
+                        <h4 className="dz-title"><a href="/portfolio">{item.title}</a></h4>
+                        <p className="text-muted small">{item.category}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="text-center m-t30">
+              <a href="/portfolio" className="btn btn-primary btn-lg btn-rounded btn-hover-1">
+                <span>View All Templates</span>
+              </a>
+            </div>
+            <div className="text-right">
+              <a href="#SupportSection" className="need-any-help">
+                <img src={`${baseUrl}/welcome/images/support.png`} alt="" />
+                Need Any Help Link
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Awards Section */}
         <div className="section-full content-inner-2">
           <div className="container-fluid">
