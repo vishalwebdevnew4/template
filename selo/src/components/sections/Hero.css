@@ -53,14 +53,28 @@
 
 .garlic1 {
   top: 10%;
-  left: 5%;
+  left: 200px !important;
   animation: float 6s ease-in-out infinite;
+  max-width: 120px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 .garlic2 {
   bottom: 15%;
   right: 10%;
   animation: float 8s ease-in-out infinite;
+  max-width: 120px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 .sm-element {
@@ -136,7 +150,7 @@
   right: -10%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(243, 183, 0, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(87, 199, 133, 0.15) 0%, transparent 70%);
   border-radius: 50%;
 }
 
@@ -147,7 +161,7 @@
   left: -10%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(243, 183, 0, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(87, 199, 133, 0.1) 0%, transparent 70%);
   border-radius: 50%;
 }
 
@@ -223,7 +237,7 @@
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(243, 183, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(87, 199, 133, 0.3);
   background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
 }
 
@@ -259,7 +273,7 @@
 }
 
 .floating-badge i {
-  color: #FFC107;
+  color: #EDDD53;
 }
 
 @media (max-width: 991px) {

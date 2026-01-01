@@ -5,7 +5,7 @@
 .section-badge {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(243, 183, 0, 0.1);
+  background: rgba(87, 199, 133, 0.1);
   color: var(--primary-color);
   border-radius: 20px;
   font-size: 12px;
@@ -125,6 +125,6 @@
 }
 
 .help-link:hover {
-  color: #D4A000;
+  color: #45A66D;
 }
 

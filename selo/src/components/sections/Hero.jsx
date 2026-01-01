@@ -17,34 +17,34 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero-section welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: 'url(https://swigo.dexignzone.com/welcome/images/banner/bg1.jpg)'}}>
+    <section className="hero-section welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: 'url(/images/banner/bg1.jpg)'}}>
       <div className="floating-elements">
         <img 
-          src="https://swigo.dexignzone.com/welcome/images/garlic1.png" 
+          src="/images/pngs/pngtree-a-mechanical-keyboard-with-rgb-backlighting-turned-on-png-image_21036561-removebg-preview.png" 
           alt="" 
           className="garlic1 slideskew parallax-element"
           onError={(e) => e.target.style.display = 'none'}
         />
         <img 
-          src="https://swigo.dexignzone.com/welcome/images/garlic2.png" 
+          src="/images/pngs/output-onlinegiftools.gif" 
           alt="" 
           className="garlic2 slideskew3 parallax-element"
           onError={(e) => e.target.style.display = 'none'}
         />
         <img 
-          src="https://swigo.dexignzone.com/welcome/images/banner/team-element.png" 
+          src="/images/banner/team-element.png" 
           alt="" 
           className="sm-element slideskew parallax-element"
           onError={(e) => e.target.style.display = 'none'}
         />
         <img 
-          src="https://swigo.dexignzone.com/welcome/images/banner/icon-element.png" 
+          src="/images/banner/icon-element.png" 
           alt="" 
           className="sm-element-2 slideskew2 parallax-element"
           onError={(e) => e.target.style.display = 'none'}
         />
         <img 
-          src="https://swigo.dexignzone.com/welcome/images/banner/icon-2-element.png" 
+          src="/images/banner/icon-2-element.png" 
           alt="" 
           className="sm-element-3 slideskew3 parallax-element"
           onError={(e) => e.target.style.display = 'none'}
@@ -79,7 +79,7 @@ const Hero = () => {
             <div className="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
               <div className="hero-image-wrapper">
                 <img 
-                  src="https://swigo.dexignzone.com/welcome/images/banner/bnr1.jpg" 
+                  src="/images/banner/bnr1.jpg" 
                   alt="Restaurant Template Preview"
                   className="hero-main-image"
                   onError={(e) => {

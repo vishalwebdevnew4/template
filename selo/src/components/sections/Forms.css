@@ -16,7 +16,7 @@
   background: var(--white);
   border-color: var(--primary-color);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(243, 183, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(87, 199, 133, 0.15);
 }
 
 .form-icon {
@@ -30,7 +30,7 @@
   margin: 0 auto 25px;
   color: var(--white);
   font-size: 36px;
-  box-shadow: 0 8px 20px rgba(243, 183, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(87, 199, 133, 0.3);
 }
 
 .form-feature-card h4 {
@@ -76,7 +76,7 @@
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(243, 183, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(87, 199, 133, 0.1);
 }
 
 .form-group textarea {

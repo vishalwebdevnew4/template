@@ -63,7 +63,7 @@ const Contact = () => {
         <Header />
         
         {/* Contact Hero */}
-        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(${baseUrl}/welcome/images/banner/bg1.jpg)`}}>
+        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(/images/banner/bg1.jpg)`}}>
           <div className="welcome-content">
             <h1 className="title">Contact <span>Us</span></h1>
             <p className="subtitle">Get in touch with our team</p>

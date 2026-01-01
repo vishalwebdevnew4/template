@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const baseUrl = 'https://swigo.dexignzone.com';
+  const baseUrl = 'https://wixor.com';
 
   return (
     <footer className="site-footer style1">
@@ -17,10 +17,10 @@ const Footer = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="widget widget_about">
                 <h4 className="footer-title">
-                  <img src={`${baseUrl}/welcome/images/elite.svg`} width="30" className="me-2" alt="" />
+                  <img src="/images/welcome/elite.svg" width="30" className="me-2" alt="" onError={(e) => e.target.style.display = 'none'} />
                   8 Years+ Envato Exclusive Author
                 </h4>
-                <p>DexignZone is a time-tested author with year's experience.</p>
+                <p>Wixor is a time-tested author with year's experience.</p>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
@@ -64,21 +64,21 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-5 m-b30 d-lg-none d-xl-block">
               <div className="money-back">
-                <img src={`${baseUrl}/welcome/images/30day.png`} alt="" />
+                <img src="/images/welcome/30day.png" alt="" onError={(e) => e.target.style.display = 'none'} />
               </div>
             </div>
             <div className="col-xl-3 col-lg-6 col-sm-6 col-7 m-b30">
               <div className="extra-buy-btn">
                 <div className="text-right m-b10">
                   <a href="javascript:void(0);" target="_blank" className="btn btn-primary detail-btn DZBuyNowRegularBtn">
-                    <img src={`${baseUrl}/welcome/images/shopping-cart-primary.svg`} alt="" />
+                    <img src="/images/welcome/shopping-cart-primary.svg" alt="" onError={(e) => e.target.style.display = 'none'} />
                     <span className="text">Regular <br />License</span>
                     <span className="value">$23</span>
                   </a>
                 </div>
                 <div className="text-right">
                   <a href="javascript:void(0);" target="_blank" className="btn btn-primary detail-btn DZBuyNowExtendedBtn">
-                    <img src={`${baseUrl}/welcome/images/shopping-cart-primary.svg`} alt="" />
+                    <img src="/images/welcome/shopping-cart-primary.svg" alt="" onError={(e) => e.target.style.display = 'none'} />
                     <span className="text">Extended <br />License</span>
                     <span className="value">$599</span>
                   </a>
@@ -92,7 +92,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <span>Copyright © <span className="current-year">2024</span> <a href="https://dexignzone.com/" className="text-primary" target="_blank" rel="noopener noreferrer">DexignZone</a>. all rights reserved.</span>
+              <span>Copyright © <span className="current-year">2024</span> <a href="https://wixor.com/" className="text-primary" target="_blank" rel="noopener noreferrer">Wixor</a>. all rights reserved.</span>
             </div>
           </div>
         </div>

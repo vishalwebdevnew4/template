@@ -25,7 +25,7 @@ const CTA = () => {
             </div>
             <div className="col-lg-6 mb-4">
               <div className="help-card highlight">
-                <h4>SOLUTION IS HIRE DexignZone</h4>
+                <h4>SOLUTION IS HIRE WIXOR</h4>
                 <p>Hire Same Team For Quality Customization</p>
                 <ul>
                   <li>In Order To Ensure Your Website Is Live, We Will Customize The Template According To Your Requirements And Upload It to the Server.</li>

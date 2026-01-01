@@ -17,9 +17,9 @@ const About = () => {
         <Header />
         
         {/* About Hero Section */}
-        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(${baseUrl}/welcome/images/banner/bg1.jpg)`}}>
+        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(/images/banner/bg1.jpg)`}}>
           <div className="welcome-content">
-            <h1 className="title">About <span>Our Agency</span></h1>
+            <h1 className="title">Digital Agency - <span>Website, Networking & Business</span> <span className="underline-text">Solutions</span> </h1>
             <p className="subtitle">We transform businesses through innovative digital solutions</p>
           </div>
         </div>
@@ -30,8 +30,13 @@ const About = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="section-head title-box wow fadeInLeft" data-wow-duration="0.8s">
-                  <h6 className="sub-title text-secondary">Who We Are</h6>
-                  <h2>Leading Digital Agency</h2>
+
+                  <h6 className="sub-title text-secondary">
+                    <span className="underline-text">Who We Are</span>
+                  </h6>
+                  <h2>
+                    <span className="underline-text">Leading Digital Agency</span>
+                  </h2>
                   <p>We are a full-service digital agency specializing in website development, networking solutions, business consulting, SEO optimization, and mobile app development. With over 10 years of experience, we help businesses grow and succeed in the digital world.</p>
                   <p>Our team of 50+ experts combines creativity with technical expertise to deliver solutions that drive measurable results. We understand that every business is unique, which is why we tailor our services to meet your specific needs and goals.</p>
                   <div className="mt-4">
@@ -41,7 +46,7 @@ const About = () => {
               </div>
               <div className="col-lg-6">
                 <div className="about-image-wrapper wow fadeInRight" data-wow-duration="0.8s">
-                  <img src={`${baseUrl}/welcome/images/banner/bnr1.jpg`} alt="About Us" className="img-fluid rounded shadow-lg" />
+                  <img src="/images/banner/bnr1.jpg" alt="About Us" className="img-fluid rounded shadow-lg" onError={(e) => e.target.style.display = 'none'} />
                 </div>
               </div>
             </div>
@@ -131,7 +136,7 @@ const About = () => {
                 <div key={index} className="col-md-3 col-sm-6 mb-4">
                   <div className="team-box text-center wow fadeInUp" data-wow-duration="0.6s" data-wow-delay={`${index * 0.1}s`}>
                     <div className="team-image">
-                      <img src={`${baseUrl}/welcome/images/${member.img}`} alt={member.name} className="img-fluid rounded-circle" />
+                      <img src={`/images/${member.img}`} alt={member.name} className="img-fluid rounded-circle" onError={(e) => e.target.style.display = 'none'} />
                       <div className="team-overlay">
                         <div className="team-social">
                           <a href="#"><i className="fab fa-facebook-f"></i></a>

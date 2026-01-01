@@ -31,7 +31,7 @@
 
 .service-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.2);
 }
 
 .service-icon {
@@ -70,7 +70,7 @@
 
 .service-box:hover .service-icon {
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 10px 30px rgba(243, 183, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(87, 199, 133, 0.4);
 }
 
 .service-box h4 {
@@ -132,7 +132,7 @@
 
 .service-box .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(243, 183, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(87, 199, 133, 0.4);
 }
 
 /* Stat Box */
@@ -165,7 +165,7 @@
 
 .stat-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.2);
 }
 
 .stat-icon {
@@ -257,7 +257,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 15px rgba(243, 183, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(87, 199, 133, 0.3);
   transition: all 0.4s ease;
 }
 
@@ -307,7 +307,7 @@
 
 .feature-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.2);
 }
 
 .feature-icon {
@@ -318,14 +318,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(243, 183, 0, 0.1) 0%, rgba(243, 183, 0, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(87, 199, 133, 0.1) 0%, rgba(87, 199, 133, 0.05) 100%);
   border-radius: 50%;
   transition: all 0.4s ease;
 }
 
 .feature-item:hover .feature-icon {
   transform: scale(1.1) rotate(5deg);
-  background: linear-gradient(135deg, rgba(243, 183, 0, 0.2) 0%, rgba(243, 183, 0, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(87, 199, 133, 0.2) 0%, rgba(87, 199, 133, 0.1) 100%);
 }
 
 .feature-item h5 {

@@ -81,7 +81,7 @@ function App() {
         </a>
         {/* Support Button */}
         <a 
-          href="https://support.w3itexperts.com" 
+          href="https://wixor.com" 
           target="_blank" 
           className="DZ-bt-support-now DZ-theme-btn theme-btn bt-support-now"
           rel="noreferrer"

@@ -21,7 +21,7 @@
   background: var(--white);
   border-color: var(--primary-color);
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(87, 199, 133, 0.2);
 }
 
 .page-icon {

@@ -37,8 +37,8 @@ const Home = () => {
         autoplayTimeout: 5000,
         responsive: {
           0: { items: 1 },
-          768: { items: 1 },
-          1024: { items: 1 }
+          768: { items: 2 },
+          1024: { items: 3 }
         }
       });
 
@@ -170,7 +170,7 @@ const Home = () => {
     { img: 'pic5.png' }
   ];
 
-  const baseUrl = 'https://swigo.dexignzone.com';
+  const baseUrl = 'https://wixor.com';
 
   return (
     <div className="page-wraper">
@@ -178,20 +178,27 @@ const Home = () => {
         <Header />
         
         {/* Welcome Banner - Exact HTML Structure */}
-        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(${baseUrl}/welcome/images/banner/bg1.jpg)`}} id="app-banner">
+        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(/images/banner/bg1.jpg)`}} id="app-banner">
           <svg className="bnr-bg1" viewBox="0 0 616 345" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style={{stopColor: '#2A7B9B', stopOpacity: 1}} />
+                <stop offset="50%" style={{stopColor: '#57C785', stopOpacity: 1}} />
+                <stop offset="100%" style={{stopColor: '#EDDD53', stopOpacity: 1}} />
+              </linearGradient>
+            </defs>
             <path d="M4 -8C68 102 148 225.892 316 238C427 246 557 187 626 343" stroke="#fff" strokeWidth="8"></path>
-            <path d="M439.576 108.632C304 102 296.836 48.5755 260 0H618V255C593 151 550.867 114.077 439.576 108.632Z" fill="var(--primary)"></path>
+            <path d="M439.576 108.632C304 102 296.836 48.5755 260 0H618V255C593 151 550.867 114.077 439.576 108.632Z" fill="url(#primaryGradient)"></path>
           </svg>
           <div className="welcome-content">
-            <h1 className="title">Digital Agency - <span>Website, Networking & Business</span> Solutions </h1>
+            <h1 className="title">Digital Agency - <span>Website, Networking & Business</span> <span className="underline-text">Solutions</span> </h1>
           </div>
           <div className="welcome-bottom">
-            <img className="garlic1 slideskew" src={`${baseUrl}/welcome/images/garlic1.png`} alt="/" />
-            <img className="garlic2 slideskew3" src={`${baseUrl}/welcome/images/garlic2.png`} alt="/" />
-            <img className="sm-element slideskew" src={`${baseUrl}/welcome/images/banner/team-element.png`} alt="" />
-            <img className="sm-element-2 slideskew2" src={`${baseUrl}/welcome/images/banner/icon-element.png`} alt="" />
-            <img className="sm-element-3 slideskew3" src={`${baseUrl}/welcome/images/banner/icon-2-element.png`} alt="" />
+            <img className="garlic1 slideskew" src="/images/pngs/pngtree-a-mechanical-keyboard-with-rgb-backlighting-turned-on-png-image_21036561-removebg-preview.png" alt="/" />
+            <img className="garlic2 slideskew3" src="/images/pngs/output-onlinegiftools.gif" alt="/" />
+            <img className="sm-element slideskew" src="/images/banner/team-element.png" alt="" onError={(e) => e.target.style.display = 'none'} />
+            <img className="sm-element-2 slideskew2" src="/images/banner/icon-element.png" alt="" onError={(e) => e.target.style.display = 'none'} />
+            <img className="sm-element-3 slideskew3" src="/images/banner/icon-2-element.png" alt="" onError={(e) => e.target.style.display = 'none'} />
             <div className="grid-row">
               <div className="grid-item grid-item1">
                 <div className="desktop-frame">
@@ -314,7 +321,7 @@ const Home = () => {
                           <polygon points="334.833,68.265 74.752,68.265 88.714,221.865 286.602,221.865 280.402,290.063 204.8,305.167 129.183,290.063 126.085,256 91.817,256 97.5,318.536 204.8,339.963 312.1,318.536 323.983,187.735 119.885,187.735 112.133,102.4 331.735,102.4" fill="#fff"></polygon>
                         </svg>
                         HTML</a></li>
-                      <li><a target="_blank" className="dz-tag dz-django" href="https://swigo.dexignzone.com/django/xhtml/index.html?data-color=color_1">
+                      <li><a target="_blank" className="dz-tag dz-django" href="https://wixor.com/django/xhtml/index.html?data-color=color_1">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="M114.784 0h53.278v244.191c-27.29 5.162-47.38 7.193-69.117 7.193C33.873 251.316 0 222.245 0 166.412c0-53.795 35.93-88.708 91.608-88.708 8.64 0 15.222.68 23.176 2.717V0zm1.867 124.427c-6.24-2.038-11.382-2.717-17.965-2.717-26.947 0-42.512 16.437-42.512 45.243 0 28.046 14.88 43.532 42.17 43.532 5.896 0 10.696-.332 18.307-1.351v-84.707z"></path><path d="M255.187 84.26v122.263c0 42.105-3.154 62.353-12.411 79.81-8.64 16.783-20.022 27.366-43.541 39.055l-49.438-23.297c23.519-10.93 34.901-20.588 42.17-35.327 7.61-15.072 10.01-32.529 10.01-78.445V84.261h53.21zM196.608 0h53.278v54.135h-53.278V0z"></path></g></svg>
                         Django</a></li>
                       <li><a className="dz-tag dz-wp" href="https://swigo.wprdx.com/demo/?color_theme=green">
@@ -351,7 +358,7 @@ const Home = () => {
                           </g>
                         </svg>
                         React Tailwind</a></li>
-                      <li><a target="_blank" className="dz-tag dz-tailwind" href="https://swigo.dexignzone.com/tailwind/xhtml/index.html?data-color=color_1">
+                      <li><a target="_blank" className="dz-tag dz-tailwind" href="https://wixor.com/tailwind/xhtml/index.html?data-color=color_1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.000000 134.000000" preserveAspectRatio="xMidYMid meet">
                           <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
                             <path d="M595 1001 c-92 -25 -159 -82 -196 -168 -28 -66 -23 -79 13 -37 56 63 131 81 198 46 19 -9 60 -38 91 -64 76 -61 141 -82 234 -75 43 3 90 14 118 27 58 28 119 95 136 150 7 23 15 49 18 59 3 9 -11 -3 -31 -26 -20 -23 -55 -49 -80 -58 -59 -23 -107 -9 -193 57 -38 28 -87 60 -110 70 -48 21 -153 31 -198 19z m195 -52 c25 -11 56 -31 70 -43 38 -35 107 -76 129 -76 11 0 22 -4 25 -9 3 -4 26 -7 51 -5 42 4 45 3 36 -14 -26 -49 -182 -86 -267 -63 -22 6 -78 38 -124 71 -90 65 -143 85 -202 77 -21 -3 -38 -1 -38 3 0 17 63 60 103 70 23 6 47 13 52 15 21 9 122 -8 165 -26z"></path>
@@ -382,7 +389,7 @@ const Home = () => {
                           <polygon points="334.833,68.265 74.752,68.265 88.714,221.865 286.602,221.865 280.402,290.063 204.8,305.167 129.183,290.063 126.085,256 91.817,256 97.5,318.536 204.8,339.963 312.1,318.536 323.983,187.735 119.885,187.735 112.133,102.4 331.735,102.4" fill="#fff"></polygon>
                         </svg>
                         HTML</a></li>
-                      <li><a target="_blank" className="dz-tag dz-django" href="https://swigo.dexignzone.com/django/xhtml/index-2.html?data-color=color_2">
+                      <li><a target="_blank" className="dz-tag dz-django" href="https://wixor.com/django/xhtml/index-2.html?data-color=color_2">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="M114.784 0h53.278v244.191c-27.29 5.162-47.38 7.193-69.117 7.193C33.873 251.316 0 222.245 0 166.412c0-53.795 35.93-88.708 91.608-88.708 8.64 0 15.222.68 23.176 2.717V0zm1.867 124.427c-6.24-2.038-11.382-2.717-17.965-2.717-26.947 0-42.512 16.437-42.512 45.243 0 28.046 14.88 43.532 42.17 43.532 5.896 0 10.696-.332 18.307-1.351v-84.707z"></path><path d="M255.187 84.26v122.263c0 42.105-3.154 62.353-12.411 79.81-8.64 16.783-20.022 27.366-43.541 39.055l-49.438-23.297c23.519-10.93 34.901-20.588 42.17-35.327 7.61-15.072 10.01-32.529 10.01-78.445V84.261h53.21zM196.608 0h53.278v54.135h-53.278V0z"></path></g></svg>
                         Django</a></li>
                       <li><a className="dz-tag dz-wp" href="https://swigo.wprdx.com/demo/home-2/?color_theme=yellow">
@@ -409,7 +416,7 @@ const Home = () => {
                           </g>
                         </svg>
                         React Tailwind</a></li>
-                      <li><a className="dz-tag dz-tailwind" href="https://swigo.dexignzone.com/tailwind/xhtml/index-2.html?data-color=color_2">
+                      <li><a className="dz-tag dz-tailwind" href="https://wixor.com/tailwind/xhtml/index-2.html?data-color=color_2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.000000 134.000000" preserveAspectRatio="xMidYMid meet">
                           <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
                             <path d="M595 1001 c-92 -25 -159 -82 -196 -168 -28 -66 -23 -79 13 -37 56 63 131 81 198 46 19 -9 60 -38 91 -64 76 -61 141 -82 234 -75 43 3 90 14 118 27 58 28 119 95 136 150 7 23 15 49 18 59 3 9 -11 -3 -31 -26 -20 -23 -55 -49 -80 -58 -59 -23 -107 -9 -193 57 -38 28 -87 60 -110 70 -48 21 -153 31 -198 19z m195 -52 c25 -11 56 -31 70 -43 38 -35 107 -76 129 -76 11 0 22 -4 25 -9 3 -4 26 -7 51 -5 42 4 45 3 36 -14 -26 -49 -182 -86 -267 -63 -22 6 -78 38 -124 71 -90 65 -143 85 -202 77 -21 -3 -38 -1 -38 3 0 17 63 60 103 70 23 6 47 13 52 15 21 9 122 -8 165 -26z"></path>
@@ -440,7 +447,7 @@ const Home = () => {
                           <polygon points="334.833,68.265 74.752,68.265 88.714,221.865 286.602,221.865 280.402,290.063 204.8,305.167 129.183,290.063 126.085,256 91.817,256 97.5,318.536 204.8,339.963 312.1,318.536 323.983,187.735 119.885,187.735 112.133,102.4 331.735,102.4" fill="#fff"></polygon>
                         </svg>
                         HTML</a></li>
-                      <li><a target="_blank" className="dz-tag dz-django" href="https://swigo.dexignzone.com/django/xhtml/index-3.html?data-color=color_3">
+                      <li><a target="_blank" className="dz-tag dz-django" href="https://wixor.com/django/xhtml/index-3.html?data-color=color_3">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="M114.784 0h53.278v244.191c-27.29 5.162-47.38 7.193-69.117 7.193C33.873 251.316 0 222.245 0 166.412c0-53.795 35.93-88.708 91.608-88.708 8.64 0 15.222.68 23.176 2.717V0zm1.867 124.427c-6.24-2.038-11.382-2.717-17.965-2.717-26.947 0-42.512 16.437-42.512 45.243 0 28.046 14.88 43.532 42.17 43.532 5.896 0 10.696-.332 18.307-1.351v-84.707z"></path><path d="M255.187 84.26v122.263c0 42.105-3.154 62.353-12.411 79.81-8.64 16.783-20.022 27.366-43.541 39.055l-49.438-23.297c23.519-10.93 34.901-20.588 42.17-35.327 7.61-15.072 10.01-32.529 10.01-78.445V84.261h53.21zM196.608 0h53.278v54.135h-53.278V0z"></path></g></svg>
                         Django</a></li>
                       <li><a className="dz-tag dz-wp" href="https://swigo.wprdx.com/demo/home-3/?color_theme=red">
@@ -459,7 +466,7 @@ const Home = () => {
                           <path d="M24.306 4.019h-4.806l-3.5 5.537-3-5.537h-11l14 23.981 14-23.981zM5.481 6.019h3.363l7.156 12.387 7.15-12.387h3.363l-10.512 18.012z"/>
                         </svg>
                         Vue Js</a></li>
-                      <li><a className="dz-tag dz-tailwind" href="https://swigo.dexignzone.com/tailwind/xhtml/index-3.html">
+                      <li><a className="dz-tag dz-tailwind" href="https://wixor.com/tailwind/xhtml/index-3.html">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.000000 134.000000" preserveAspectRatio="xMidYMid meet">
                           <g transform="translate(0.000000,134.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
                             <path d="M595 1001 c-92 -25 -159 -82 -196 -168 -28 -66 -23 -79 13 -37 56 63 131 81 198 46 19 -9 60 -38 91 -64 76 -61 141 -82 234 -75 43 3 90 14 118 27 58 28 119 95 136 150 7 23 15 49 18 59 3 9 -11 -3 -31 -26 -20 -23 -55 -49 -80 -58 -59 -23 -107 -9 -193 57 -38 28 -87 60 -110 70 -48 21 -153 31 -198 19z m195 -52 c25 -11 56 -31 70 -43 38 -35 107 -76 129 -76 11 0 22 -4 25 -9 3 -4 26 -7 51 -5 42 4 45 3 36 -14 -26 -49 -182 -86 -267 -63 -22 6 -78 38 -124 71 -90 65 -143 85 -202 77 -21 -3 -38 -1 -38 3 0 17 63 60 103 70 23 6 47 13 52 15 21 9 122 -8 165 -26z"></path>
@@ -482,7 +489,7 @@ const Home = () => {
             </div>
             <div className="text-right">
               <a href="#SupportSection" className="need-any-help">
-                <img src={`${baseUrl}/welcome/images/support.png`} alt="" />
+                <img src="/images/welcome/support.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                 Need Any Help Link
               </a>
             </div>
@@ -505,8 +512,8 @@ const Home = () => {
                         <img src="/images/portfolio/swigo.png" alt="" />
                       </div>
                     </div>
-                    <div className="dz-title">Home Page 1</div>
-                  </a>
+                    <div className="dz-title"></div>
+                  </a>Home
                 </div>
               </div>
               <div className="item wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -517,7 +524,7 @@ const Home = () => {
                         <img src="/images/portfolio/plantzone.png" alt="" />
                       </div>
                     </div>
-                    <div className="dz-title">Home Page 1</div>
+                    <div className="dz-title">Home</div>
                   </a>
                 </div>
               </div>
@@ -529,7 +536,7 @@ const Home = () => {
                         <img src="/images/portfolio/gardenzone.png" alt="" />
                       </div>
                     </div>
-                    <div className="dz-title">Home Page 2</div>
+                    <div className="dz-title">Home</div>
                   </a>
                 </div>
               </div>
@@ -541,7 +548,7 @@ const Home = () => {
                         <img src="/images/portfolio/footflare.png" alt="" />
                       </div>
                     </div>
-                    <div className="dz-title">Home Page 2</div>
+                    <div className="dz-title">Home</div>
                   </a>
                 </div>
               </div>
@@ -553,7 +560,7 @@ const Home = () => {
                         <img src="/images/portfolio/pixio.png" alt="" />
                       </div>
                     </div>
-                    <div className="dz-title">Home Page 3</div>
+                    <div className="dz-title">Home</div>
                   </a>
                 </div>
               </div>
@@ -565,7 +572,7 @@ const Home = () => {
                         <img src="/images/portfolio/bookland.png" alt="" />
                       </div>
                     </div>
-                    <div className="dz-title">Home Page 3</div>
+                    <div className="dz-title">Home</div>
                   </a>
                 </div>
               </div>
@@ -577,7 +584,7 @@ const Home = () => {
                         <img src="/images/portfolio/inkvoice.png" alt="" />
                       </div>
                     </div>
-                    <div className="dz-title">Home Page 4</div>
+                    <div className="dz-title">Home</div>
                   </a>
                 </div>
               </div>
@@ -589,14 +596,14 @@ const Home = () => {
                         <img src="/images/portfolio/w3music.png" alt="" />
                       </div>
                     </div>
-                    <div className="dz-title">Home Page 4</div>
+                    <div className="dz-title">Home</div>
                   </a>
                 </div>
               </div>
             </div>
             <div className="text-right">
               <a href="#SupportSection" className="need-any-help">
-                <img src={`${baseUrl}/welcome/images/support.png`} alt="" />
+                <img src="/images/welcome/support.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                 Need Any Help Link
               </a>
             </div>
@@ -655,7 +662,7 @@ const Home = () => {
             </div>
             <div className="text-right">
               <a href="#SupportSection" className="need-any-help">
-                <img src={`${baseUrl}/welcome/images/support.png`} alt="" />
+                <img src="/images/welcome/support.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                 Need Any Help Link
               </a>
             </div>
@@ -663,7 +670,7 @@ const Home = () => {
         </div>
 
         {/* Features Section */}
-        <div className="section-full content-inner feature-wraper overlay-white-light" id="features" style={{backgroundImage: `url(${baseUrl}/welcome/images/bg2.jpg)`, backgroundSize: 'cover'}}>
+        <div className="section-full content-inner feature-wraper overlay-white-light" id="features" style={{backgroundImage: `url(/images/bg2.jpg)`, backgroundSize: 'cover'}}>
           <div className="container-fluid">
             <div className="section-head title-box text-center">
               <h6 className="sub-title text-secondary">Our Features</h6>
@@ -674,7 +681,7 @@ const Home = () => {
                 <li key={index}>
                   <div className={`features-item ${feature.class || ''} wow zoomIn`} data-wow-duration="0.5s" data-wow-delay={feature.delay}>
                     <div className="circle">
-                      <img src={`${baseUrl}/welcome/images/icons/${feature.icon}`} alt="" />
+                      <img src={`/images/icons/${feature.icon}`} alt="" onError={(e) => e.target.style.display = 'none'} />
                     </div>
                     <h3 className="title">{feature.title}</h3>
                   </div>
@@ -685,7 +692,7 @@ const Home = () => {
         </div>
 
         {/* Performance Section */}
-        <div className="section-full content-inner optimized-area content-inner pb-3" style={{backgroundImage: `url(${baseUrl}/welcome/images/axiom-pattern.png)`}}>
+        <div className="section-full content-inner optimized-area content-inner pb-3" style={{backgroundImage: `url(/images/axiom-pattern.png)`}}>
           <div className="container-fluid">
             <div className="section-head title-box text-center">
               <h6 className="sub-title text-secondary">Fast Time Load</h6>
@@ -694,7 +701,7 @@ const Home = () => {
             <div className="row">
               <div className="col-sm-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
                 <div className="pagespeed">
-                  <div className="icon"><img src={`${baseUrl}/welcome/images/speed/icon1.png`} alt="" /></div>
+                  <div className="icon"><img src="/images/speed/icon1.png" alt="" onError={(e) => e.target.style.display = 'none'} /></div>
                   <div className="info">
                     <div className="speed green">A+</div>
                     <h4 className="dz-title">Google Pagespeed</h4>
@@ -704,7 +711,7 @@ const Home = () => {
               </div>
               <div className="col-sm-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
                 <div className="pagespeed">
-                  <div className="icon"><img src={`${baseUrl}/welcome/images/speed/icon2.png`} alt="" /></div>
+                  <div className="icon"><img src="/images/speed/icon2.png" alt="" onError={(e) => e.target.style.display = 'none'} /></div>
                   <div className="info">
                     <div className="speed green">A+</div>
                     <h4 className="dz-title">Pingdom Pagespeed</h4>
@@ -714,7 +721,7 @@ const Home = () => {
               </div>
               <div className="col-sm-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
                 <div className="pagespeed">
-                  <div className="icon"><img src={`${baseUrl}/welcome/images/speed/icon3.png`} alt="" /></div>
+                  <div className="icon"><img src="/images/speed/icon3.png" alt="" onError={(e) => e.target.style.display = 'none'} /></div>
                   <div className="info">
                     <div className="speed green">A+</div>
                     <h4 className="dz-title">GTMetrix Pagespeed</h4>
@@ -724,7 +731,7 @@ const Home = () => {
               </div>
               <div className="col-sm-6 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">
                 <div className="pagespeed box">
-                  <div className="icon"><img src={`${baseUrl}/welcome/images/rocket2.png`} alt="" /></div>
+                  <div className="icon"><img src="/images/rocket2.png" alt="" onError={(e) => e.target.style.display = 'none'} /></div>
                   <div className="info">
                     <h4 className="dz-title">Make your site the 1st-rank.</h4>
                     <p>All the necessary plugins for SEO Optimization are bundled.</p>
@@ -734,7 +741,7 @@ const Home = () => {
             </div>
             <div className="text-right">
               <a href="#SupportSection" className="need-any-help">
-                <img src={`${baseUrl}/welcome/images/support.png`} alt="" />
+                <img src="/images/welcome/support.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                 Need Any Help Link
               </a>
             </div>
@@ -763,7 +770,7 @@ const Home = () => {
                       <p>{testimonial.text}</p>
                     </div>
                     <div className="testimonial-pic radius shadow">
-                      <img src={`${baseUrl}/welcome/images/pic1.jpg`} width="100" height="100" alt="" />
+                      <img src="/images/pic1.jpg" width="100" height="100" alt="" onError={(e) => e.target.style.display = 'none'} />
                     </div>
                     <div className="name-box">
                       <strong className="testimonial-name">{testimonial.author}</strong>
@@ -775,7 +782,7 @@ const Home = () => {
             </div>
             <div className="text-right">
               <a href="#SupportSection" className="need-any-help">
-                <img src={`${baseUrl}/welcome/images/support.png`} alt="" />
+                <img src="/images/welcome/support.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                 Need Any Help Link
               </a>
             </div>
@@ -807,7 +814,7 @@ const Home = () => {
                     <div className="layout-type phone">
                       <a href={`${baseUrl}/xhtml/contact-us.html`} target="_blank" rel="noopener noreferrer">
                         <div className="media">
-                          <img src={`${baseUrl}/welcome/images/demo/contact-tab.png`} alt="" />
+                          <img src="/images/demo/contact-tab.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                         </div>
                         <div className="dz-title">Contact Us</div>
                       </a>
@@ -817,7 +824,7 @@ const Home = () => {
                     <div className="layout-type tab">
                       <a href={`${baseUrl}/xhtml/contact-us.html`} target="_blank" rel="noopener noreferrer">
                         <div className="media">
-                          <img src={`${baseUrl}/welcome/images/demo/contact-mobile.png`} alt="" />
+                          <img src="/images/demo/contact-mobile.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                         </div>
                         <div className="dz-title">Contact Us</div>
                       </a>
@@ -828,7 +835,7 @@ const Home = () => {
             </div>
             <div className="text-right">
               <a href="#SupportSection" className="need-any-help">
-                <img src={`${baseUrl}/welcome/images/support.png`} alt="" />
+                <img src="/images/welcome/support.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                 Need Any Help Link
               </a>
             </div>
@@ -836,14 +843,15 @@ const Home = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="section-full video-presentation bg-img-fix" style={{backgroundImage: `url(${baseUrl}/welcome/images/bg1.png)`, backgroundRepeat: 'no-repeat'}}>
+        <div className="section-full video-presentation bg-img-fix" style={{backgroundImage: `url(/images/pngs/glasses-lie-laptop-reflecting-light-from-screen-dark.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
           <div className="container-fluid">
             <div className="row align-items-center text-center text-lg-start">
               <div className="col-lg-9 text-white">
-                <h2 className="m-tb10"><span className="font-weight-400">Get Started with </span> Swigo <span className="font-weight-400"> Today </span></h2>
+                <h2 className="m-tb10"><span className="font-weight-400">Ready to Transform Your Business?</span></h2>
+                <p className="text-white mt-3">Start your digital journey with us today and experience the difference</p>
               </div>
               <div className="col-lg-3 m-tb10 text-lg-end">
-                <a href="#" target="_blank" className="btn btn-secondary btn-lg btn-rounded DZBuyNowBtn btn-hover-1"><span>Buy Now</span></a>
+                <a href="#" target="_blank" className="btn btn-secondary btn-lg btn-rounded DZBuyNowBtn btn-hover-1"><span>Get Started</span></a>
               </div>
             </div>
           </div>
@@ -860,7 +868,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-primary">After Purchase A Template...</h3>
                 <h4>You Will Start Customizing According Your Requirement<br /> <span className="text-primary">BUT</span> What If You Don't Know</h4>
-                <h3 className="text-black">SOLUTION IS <a target="_blank" href="https://support.w3itexperts.com" rel="noopener noreferrer"><span className="text-primary font-weight-600">HIRE DexignZone</span></a></h3>
+                <h3 className="text-black">SOLUTION IS <a target="_blank" href="https://wixor.com" rel="noopener noreferrer"><span className="text-primary font-weight-600">HIRE WIXOR</span></a></h3>
                 <div className="hire">
                   <h4><span className="text-black">Hire Same Team For </span> <span className="text-primary">Quality Customization</span></h4>
                   <ul>
@@ -868,18 +876,18 @@ const Home = () => {
                   </ul>
                   <div className="m-t20">
                     <a href="#" target="_blank" className="btn btn-primary btn-rounded m-r10 button-md DZBuyNowBtn btn-hover-1"><span>Buy Now</span></a>
-                    <a href="https://support.w3itexperts.com" target="_blank" className="btn btn-secondary btn-rounded btn-hover-1" rel="noopener noreferrer"><span><i className="fa fa-envelope-o m-r5"></i> Support</span></a>
+                    <a href="https://wixor.com" target="_blank" className="btn btn-secondary btn-rounded btn-hover-1" rel="noopener noreferrer"><span><i className="fa fa-envelope-o m-r5"></i> Support</span></a>
                   </div>
                 </div>
               </div>
             </div>
-            <img className="bg-image" src={`${baseUrl}/welcome/images/bg-image.png`} alt="/" />
-            <img className="bg-image1" src={`${baseUrl}/welcome/images/bg-image1.png`} alt="/" />
+            <img className="bg-image" src="/images/pngs/web-development-web-design-software-development-web-developer-png-favpng-a7VTaZKUh6SucwAvLKYCzRRa0-removebg-preview.png" alt="/" />
+            <img className="bg-image1" src="/images/pngs/4-2-web-development-png-picture1-removebg-preview.png" alt="/" />
           </div>
         </div>
 
         {/* Newsletter Section */}
-        <div className="section-full theme-footer bg-dark text-white" style={{backgroundImage: `url(${baseUrl}/welcome/images/pic1.png)`}}>
+        <div className="section-full theme-footer bg-dark text-white" style={{backgroundImage: `url(/images/portfolio/man-using-laptop-night-top-view-web-banner-with-copy-space.jpg)`}}>
           <div className="container-fluid text-center">
             <div className="news-letter">
               <h2>Subscribe to Our Newsletter</h2>
@@ -898,7 +906,7 @@ const Home = () => {
             </div>
             <div className="requirement">
               <h2>Any Special <span>Requirement</span></h2>
-              <h3>Write us At <a href="https://support.w3itexperts.com" target="_blank" rel="noopener noreferrer">DexignZone Support</a></h3>
+              <h3>Write us At <a href="https://wixor.com" target="_blank" rel="noopener noreferrer">Wixor Support</a></h3>
             </div>
           </div>
         </div>
@@ -988,7 +996,7 @@ const Home = () => {
             </div>
             <div className="text-right">
               <a href="#SupportSection" className="need-any-help">
-                <img src={`${baseUrl}/welcome/images/support.png`} alt="" />
+                <img src="/images/welcome/support.png" alt="" onError={(e) => e.target.style.display = 'none'} />
                 Need Any Help Link
               </a>
             </div>
@@ -1006,7 +1014,7 @@ const Home = () => {
               {awards.map((award, index) => (
                 <div key={index} className="item">
                   <div className="awards-box">
-                    <img src={`${baseUrl}/welcome/images/awards/${award.img}`} alt="" />
+                    <img src={`/images/awards/${award.img}`} alt="" onError={(e) => e.target.style.display = 'none'} />
                   </div>
                 </div>
               ))}

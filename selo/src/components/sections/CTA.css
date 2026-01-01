@@ -63,9 +63,9 @@
 }
 
 .help-card.highlight {
-  background: linear-gradient(135deg, rgba(243, 183, 0, 0.12), rgba(255, 193, 7, 0.12));
+  background: linear-gradient(135deg, rgba(87, 199, 133, 0.12), rgba(255, 193, 7, 0.12));
   border-color: var(--primary-color);
-  box-shadow: 0 5px 20px rgba(243, 183, 0, 0.15);
+  box-shadow: 0 5px 20px rgba(87, 199, 133, 0.15);
 }
 
 .help-card h4 {
@@ -137,7 +137,7 @@
   color: var(--white);
   transform: scale(1.05);
   border-color: var(--primary-color);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.3);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.3);
 }
 
 .pricing-card.featured h3,
@@ -148,7 +148,7 @@
 .pricing-card:hover {
   transform: translateY(-10px);
   border-color: var(--primary-color);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.2);
 }
 
 .pricing-card.featured:hover {

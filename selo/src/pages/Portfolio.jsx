@@ -354,7 +354,7 @@ const Portfolio = () => {
         <Header />
         
         {/* Portfolio Hero */}
-        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(${baseUrl}/welcome/images/banner/bg1.jpg)`}}>
+        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(/images/banner/bg1.jpg)`}}>
           <div className="welcome-content">
             <h1 className="title">Our <span>Portfolio</span></h1>
             <p className="subtitle">Showcasing our successful projects and client work</p>
@@ -407,7 +407,7 @@ const Portfolio = () => {
                     <p>"Outstanding work! They delivered exactly what we needed and exceeded our expectations. Our website traffic increased by 250% in just 3 months."</p>
                   </div>
                   <div className="testimonial-author">
-                    <img src={`${baseUrl}/welcome/images/pic1.jpg`} alt="Client" width="60" height="60" className="rounded-circle" />
+                    <img src="/images/pic1.jpg" alt="Client" width="60" height="60" className="rounded-circle" onError={(e) => e.target.style.display = 'none'} />
                     <div>
                       <h5>John Smith</h5>
                       <span>CEO, TechCorp</span>
@@ -424,7 +424,7 @@ const Portfolio = () => {
                     <p>"Professional team, great communication, and excellent results. They transformed our digital strategy and helped us reach new markets. Highly recommended!"</p>
                   </div>
                   <div className="testimonial-author">
-                    <img src={`${baseUrl}/welcome/images/pic1.jpg`} alt="Client" width="60" height="60" className="rounded-circle" />
+                    <img src="/images/pic1.jpg" alt="Client" width="60" height="60" className="rounded-circle" onError={(e) => e.target.style.display = 'none'} />
                     <div>
                       <h5>Sarah Johnson</h5>
                       <span>Marketing Director, Global Inc.</span>
@@ -441,7 +441,7 @@ const Portfolio = () => {
                     <p>"They transformed our digital presence completely. Our online sales increased by 300% and customer engagement improved significantly. Best investment we made!"</p>
                   </div>
                   <div className="testimonial-author">
-                    <img src={`${baseUrl}/welcome/images/pic1.jpg`} alt="Client" width="60" height="60" className="rounded-circle" />
+                    <img src="/images/pic1.jpg" alt="Client" width="60" height="60" className="rounded-circle" onError={(e) => e.target.style.display = 'none'} />
                     <div>
                       <h5>Michael Chen</h5>
                       <span>Business Owner, StartupHub</span>

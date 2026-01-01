@@ -16,7 +16,7 @@
 .award-card:hover {
   transform: translateY(-10px);
   border-color: var(--primary-color);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.2);
 }
 
 .award-icon {
@@ -30,7 +30,7 @@
   margin: 0 auto 25px;
   color: var(--white);
   font-size: 40px;
-  box-shadow: 0 10px 30px rgba(243, 183, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(87, 199, 133, 0.35);
 }
 
 .award-card h4 {

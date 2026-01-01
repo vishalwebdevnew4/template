@@ -2,14 +2,14 @@ import './ResponsiveDesign.css';
 
 const ResponsiveDesign = () => {
   const devices = [
-    { name: 'Home Page 1', type: 'mobile' },
-    { name: 'Home Page 1', type: 'tablet' },
-    { name: 'Home Page 2', type: 'mobile' },
-    { name: 'Home Page 2', type: 'tablet' },
-    { name: 'Home Page 3', type: 'mobile' },
-    { name: 'Home Page 3', type: 'tablet' },
-    { name: 'Home Page 4', type: 'mobile' },
-    { name: 'Home Page 4', type: 'tablet' }
+    { name: 'Home', type: 'mobile' },
+    { name: 'Home', type: 'tablet' },
+    { name: 'Home', type: 'mobile' },
+    { name: 'Home', type: 'tablet' },
+    { name: 'Home', type: 'mobile' },
+    { name: 'Home', type: 'tablet' },
+    { name: 'Home', type: 'mobile' },
+    { name: 'Home', type: 'tablet' }
   ];
 
   return (

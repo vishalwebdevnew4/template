@@ -9,8 +9,46 @@
   position: relative;
 }
 
+/* Force white color for all title elements in welcome banner */
 .welcome-content .title {
   animation: fadeInUp 0.8s ease-out;
+  color: #fff !important;
+  position: relative;
+  display: inline-block;
+}
+
+/* Old underline styles removed - now using .underline-text class in index.css */
+
+.welcome-content .title,
+.welcome-content .title span,
+.welcome-banner .welcome-content .title,
+.welcome-banner .welcome-content .title span,
+.welcome-banner h1.title,
+.welcome-banner h1.title span,
+.welcome-banner h1,
+.welcome-banner h1 span {
+  color: #fff !important;
+}
+
+/* Override any global h1 or title styles */
+.welcome-banner h1,
+.welcome-banner .title,
+.welcome-banner .title span,
+.welcome-banner h1.title,
+.welcome-banner h1.title span {
+  color: #fff !important;
+}
+
+/* Target the specific h1 with class title */
+h1.title,
+h1.title span {
+  color: #fff !important;
+}
+
+/* More specific for welcome banner */
+.welcome-banner h1.title,
+.welcome-banner h1.title span {
+  color: #fff !important;
 }
 
 .welcome-content .subtitle {
@@ -29,6 +67,66 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* About Content Section - Center vertically and make text white */
+.section-full.content-inner:first-of-type {
+  background-color: #1a1a1a !important;
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
+}
+
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head {
+  padding-top: 40px;
+  margin-top: 20px;
+  color: #fff !important;
+}
+
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head * {
+  color: #fff !important;
+}
+
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head h6,
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head .sub-title,
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head .text-secondary {
+  color: #fff !important;
+}
+
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head h2 {
+  color: #fff !important;
+}
+
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head p {
+  color: #fff !important;
+}
+
+/* Underline styles moved to index.css to avoid duplicates */
+
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head h2::before {
+  content: '';
+  position: absolute;
+  right: -35px;
+  bottom: -3px;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 51 51' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36.204 1.044C32.02 2.814 5.66 31.155 4.514 35.116c-.632 2.182-1.75 5.516-2.483 7.409-3.024 7.805-1.54 9.29 6.265 6.265 1.893-.733 5.227-1.848 7.41-2.477 3.834-1.105 4.473-1.647 19.175-16.27 0 0 10.63-10.546 15.21-15.125C53 8.997 42.021-1.418 36.203 1.044Zm7.263 5.369c3.56 3.28 4.114 4.749 2.643 6.995l-1.115 1.7-4.586-4.543-4.585-4.544 1.42-1.157C39.311 3.18 40.2 3.4 43.467 6.413ZM37.863 13.3l4.266 4.304-11.547 11.561-11.547 11.561-4.48-4.446-4.481-4.447 11.404-11.418c6.273-6.28 11.566-11.42 11.762-11.42.197 0 2.277 1.938 4.623 4.305ZM12.016 39.03l3.54 3.584-3.562 1.098-5.316 1.641c-1.665.516-1.727.455-1.211-1.21l1.614-5.226c1.289-4.177.685-4.191 4.935.113Z' fill='%2357C785'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: penBounce 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* penBounce animation moved to index.css */
+
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head p {
+  position: relative;
+  display: block;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.section-full.content-inner:first-of-type .row.align-items-center .col-lg-6:first-child .section-head p::after {
+  display: none;
 }
 
 /* About Image Wrapper */
@@ -53,7 +151,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(243, 183, 0, 0.1) 0%, transparent 100%);
+  background: linear-gradient(135deg, rgba(87, 199, 133, 0.1) 0%, transparent 100%);
   z-index: 1;
   opacity: 0;
   transition: opacity 0.6s ease;
@@ -82,7 +180,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(243, 183, 0, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(87, 199, 133, 0.1), transparent);
   transition: left 0.6s ease;
 }
 
@@ -151,7 +249,7 @@
 
 .value-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.2);
 }
 
 .value-box .icon-box {
@@ -162,14 +260,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(243, 183, 0, 0.1) 0%, rgba(243, 183, 0, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(87, 199, 133, 0.1) 0%, rgba(87, 199, 133, 0.05) 100%);
   border-radius: 50%;
   transition: all 0.4s ease;
 }
 
 .value-box:hover .icon-box {
   transform: scale(1.1) rotate(5deg);
-  background: linear-gradient(135deg, rgba(243, 183, 0, 0.2) 0%, rgba(243, 183, 0, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(87, 199, 133, 0.2) 0%, rgba(87, 199, 133, 0.1) 100%);
 }
 
 .value-box h4 {
@@ -212,7 +310,7 @@
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(243, 183, 0, 0.4);
+  box-shadow: 0 10px 25px rgba(87, 199, 133, 0.4);
 }
 
 /* Team Section */
@@ -226,7 +324,7 @@
 
 .team-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.2);
 }
 
 .team-image {
@@ -251,7 +349,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(243, 183, 0, 0.9);
+  background: rgba(87, 199, 133, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,7 +407,7 @@
 
 .process-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(243, 183, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(87, 199, 133, 0.2);
 }
 
 .process-number {
@@ -326,7 +424,7 @@
   justify-content: center;
   font-size: 24px;
   font-weight: 700;
-  box-shadow: 0 5px 15px rgba(243, 183, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(87, 199, 133, 0.4);
 }
 
 .process-icon {

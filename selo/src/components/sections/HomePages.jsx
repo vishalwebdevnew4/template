@@ -43,7 +43,7 @@ const HomePages = () => {
               <div className="home-page-card animate__animated animate__fadeIn">
                 <div className="home-page-preview">
                   <img 
-                    src={`https://swigo.dexignzone.com/welcome/images/demo/${page.id === 1 ? 'index-4-full.png' : page.id === 2 ? 'index-full.png' : page.id === 3 ? 'index-2-full.png' : 'index-3-full.png'}`}
+                    src={`/images/demo/${page.id === 1 ? 'index-4-full.png' : page.id === 2 ? 'index-full.png' : page.id === 3 ? 'index-2-full.png' : 'index-3-full.png'}`}
                     alt={page.title}
                     className="preview-image"
                     onError={(e) => {

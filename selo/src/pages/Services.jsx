@@ -56,7 +56,7 @@ const Services = () => {
         <Header />
         
         {/* Services Hero */}
-        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(${baseUrl}/welcome/images/banner/bg1.jpg)`}}>
+        <div className="welcome-banner overlay-black-dark dez-move-image" style={{backgroundImage: `url(/images/banner/bg1.jpg)`}}>
           <div className="welcome-content">
             <h1 className="title">Our <span>Services</span></h1>
             <p className="subtitle">Complete digital solutions for your business success</p>
@@ -172,7 +172,7 @@ const Services = () => {
               </div>
               <div className="col-lg-6">
                 <div className="process-image wow fadeInRight" data-wow-duration="0.8s">
-                  <img src={`${baseUrl}/welcome/images/banner/bnr2.jpg`} alt="Our Process" className="img-fluid rounded shadow-lg" />
+                  <img src="/images/banner/bnr2.jpg" alt="Our Process" className="img-fluid rounded shadow-lg" onError={(e) => e.target.style.display = 'none'} />
                 </div>
               </div>
             </div>
