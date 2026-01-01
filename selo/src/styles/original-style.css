@@ -3519,9 +3519,14 @@ footer .widget_services ul li:hover {
 }
 .footer-bottom {
     background-color:#f5f5f5;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 5px 0;
     color: #777;
 	border-top:1px solid rgba(0,0,0,0.1);
+	margin-bottom: 0;
+}
+.site-footer {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 .footer-bottom ul {
     margin: 0;
